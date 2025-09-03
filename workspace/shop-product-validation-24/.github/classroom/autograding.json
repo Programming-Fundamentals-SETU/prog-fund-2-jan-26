@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Constructor and Getters Tests - 4 Marks",
+      "setup": "",
+      "run": "gradle test --tests 'ProductTest$ContructorAndGetterTests'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "Setters Tests - 5 Marks",
+      "setup": "",
+      "run": "gradle test --tests 'ProductTest$SetterTests'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "ToString Tests - 1 Mark",
+      "setup": "",
+      "run": "gradle test --tests 'ProductTest$ToStringTests'",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

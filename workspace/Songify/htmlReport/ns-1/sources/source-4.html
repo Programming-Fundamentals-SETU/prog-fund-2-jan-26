@@ -1,0 +1,172 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Song</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: Song (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Song</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    40%
+  </span>
+  <span class="absValue">
+    (4/10)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (14/21)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;public class Song {
+<b class="fc">&nbsp;    private int songId = 9999; //valid values - between 1000 and 9999 inclusive - default value is 9999</b>
+&nbsp;    private String name; // valid length is 20 - default to the first 20 characters of input.
+&nbsp;    private Artist artist; // valid length is 15 - default to the first 15 characters
+<b class="fc">&nbsp;    private int length = 1; // length of song in seconds. Valid values are between 1 and 600 inclusive. Default to 1.</b>
+&nbsp;   // private boolean verified = false; // value of true means that this song has been correctly licenced on Songify platform, false otherwise. Default is false.
+&nbsp;
+&nbsp;
+&nbsp;
+<b class="fc">&nbsp;    public Song(int songId, String name, String  artistName,boolean verified, int length) {</b>
+<b class="fc">&nbsp;        setSongId(songId);</b>
+<b class="fc">&nbsp;        if (name.length() &lt;= 20)</b>
+<b class="fc">&nbsp;            this.name = name;</b>
+<b class="fc">&nbsp;        else this.name = name.substring(0,20);</b>
+<b class="fc">&nbsp;       artist = new Artist (artistName, verified);</b>
+<b class="fc">&nbsp;       setLength(length);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    public int getSongId() {
+<b class="nc">&nbsp;        return songId;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getName() {
+<b class="nc">&nbsp;        return name;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public Artist getArtist() {
+<b class="nc">&nbsp;        return artist;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public int getLength() {
+<b class="nc">&nbsp;        return length;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    public void setSongId(int songId) {
+<b class="fc">&nbsp;        if ((songId &gt;= 1000) &amp;&amp; (songId &lt;=9999))</b>
+<b class="fc">&nbsp;            this.songId = songId;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setName(String name) {
+<b class="nc">&nbsp;        if  (name.length() &lt;= 20)</b>
+<b class="nc">&nbsp;            this.name = name;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setArtist(Artist artist) {
+&nbsp;
+<b class="nc">&nbsp;            this.artist = artist;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setLength(int length) {
+<b class="fc">&nbsp;        if ((length &gt;= 1) &amp;&amp; (length &lt;=600))</b>
+<b class="fc">&nbsp;            this.length = length;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public String toString() {
+<b class="fc">&nbsp;        return &quot;Song{&quot; +</b>
+&nbsp;                &quot;songId=&quot; + songId +
+&nbsp;                &quot;, name= &quot; + name + &#39;\&#39;&#39; +
+&nbsp;                &quot;, artist= &quot; + artist + &#39;\&#39;&#39; +
+&nbsp;                &quot;, length=&quot; + length +
+&nbsp;                &#39;}&#39;;
+&nbsp;    }
+&nbsp;}
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-02-12 20:29</div>
+</div>
+</body>
+</html>

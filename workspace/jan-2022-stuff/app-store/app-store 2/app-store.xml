@@ -1,0 +1,21 @@
+<object-stream>
+  <list>
+    <models.EducationApp>
+      <developer>
+        <developerName>microsoft</developerName>
+        <developerWebsite>ms.com</developerWebsite>
+      </developer>
+      <appSize>4.0</appSize>
+      <appVersion>3.0</appVersion>
+      <ageRating>2</ageRating>
+      <inAppPurchase>true</inAppPurchase>
+      <language>English</language>
+      <license>Proprietary</license>
+      <appCost>4.0</appCost>
+      <numberOfDownloads>0</numberOfDownloads>
+      <ratings/>
+      <subjectCategory>General</subjectCategory>
+      <level>0</level>
+    </models.EducationApp>
+  </list>
+</object-stream>

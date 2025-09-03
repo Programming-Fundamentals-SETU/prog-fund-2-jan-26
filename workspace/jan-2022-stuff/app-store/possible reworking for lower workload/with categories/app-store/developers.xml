@@ -1,0 +1,24 @@
+<object-stream>
+  <list>
+    <models.Developer>
+      <developerName>Microsoft</developerName>
+      <developerWebsite>www.microsoft.com</developerWebsite>
+    </models.Developer>
+    <models.Developer>
+      <developerName>EA Games</developerName>
+      <developerWebsite>www.eagames.com</developerWebsite>
+    </models.Developer>
+    <models.Developer>
+      <developerName>Apple</developerName>
+      <developerWebsite>www.apple.ie</developerWebsite>
+    </models.Developer>
+    <models.Developer>
+      <developerName>Top Games</developerName>
+      <developerWebsite>www.topgames.com</developerWebsite>
+    </models.Developer>
+    <models.Developer>
+      <developerName>HiEd</developerName>
+      <developerWebsite>www.hied.com</developerWebsite>
+    </models.Developer>
+  </list>
+</object-stream>

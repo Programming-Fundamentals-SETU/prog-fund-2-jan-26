@@ -1,0 +1,562 @@
+<object-stream>
+  <list>
+    <models.ProductivityApp>
+      <developer>
+        <developerName>Apple</developerName>
+        <developerWebsite>www.apple.com</developerWebsite>
+      </developer>
+      <appName>Keynote</appName>
+      <appSize>23.0</appSize>
+      <appVersion>1.0</appVersion>
+      <ageRating>12</ageRating>
+      <inAppPurchase>true</inAppPurchase>
+      <license>Proprietary</license>
+      <appCost>12.99</appCost>
+      <numberOfDownloads>203</numberOfDownloads>
+      <ratings>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>RickyW</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Scotty</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Used once, never again</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Used once, never again</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Too slow</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>RickyW</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Cary1987</raterName>
+          <ratingComment>Used once, never again</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Scotty</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Too slow</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>Cary1987</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+      </ratings>
+      <productivityCategory>Utility</productivityCategory>
+    </models.ProductivityApp>
+    <models.GameApp>
+      <developer>
+        <developerName>EA Games</developerName>
+        <developerWebsite>www.eagames.com</developerWebsite>
+      </developer>
+      <appName>CookOff</appName>
+      <appSize>12.0</appSize>
+      <appVersion>2.4</appVersion>
+      <ageRating>15</ageRating>
+      <inAppPurchase>true</inAppPurchase>
+      <license>copyleft protective</license>
+      <appCost>0.99</appCost>
+      <numberOfDownloads>978</numberOfDownloads>
+      <ratings>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Too slow</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Cary1987</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>RickyW</raterName>
+          <ratingComment>Too slow</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Used once, never again</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>MarkD</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Too slow</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Poor App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Poor App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>MarkD</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>MarkD</raterName>
+          <ratingComment>Too slow</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Cary1987</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+      </ratings>
+      <gameGenre>Action</gameGenre>
+      <isMultiplayer>true</isMultiplayer>
+    </models.GameApp>
+    <models.EducationApp>
+      <developer>
+        <developerName>HiEd</developerName>
+        <developerWebsite>www.hied.com</developerWebsite>
+      </developer>
+      <appName>LearnJava</appName>
+      <appSize>23.0</appSize>
+      <appVersion>4.3</appVersion>
+      <ageRating>10</ageRating>
+      <inAppPurchase>true</inAppPurchase>
+      <license>public domain</license>
+      <appCost>0.0</appCost>
+      <numberOfDownloads>814</numberOfDownloads>
+      <ratings>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>MarkD</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Cary1987</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Scotty</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>MarkD</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Used once, never again</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Scotty</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>Scotty</raterName>
+          <ratingComment>Poor App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Cary1987</raterName>
+          <ratingComment>Poor App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>RickyW</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Cary1987</raterName>
+          <ratingComment>Too slow</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>RickyW</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>RickyW</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+      </ratings>
+      <subjectCategory>General</subjectCategory>
+      <level>4</level>
+    </models.EducationApp>
+    <models.ProductivityApp>
+      <developer>
+        <developerName>Apple</developerName>
+        <developerWebsite>www.apple.com</developerWebsite>
+      </developer>
+      <appName>Pages</appName>
+      <appSize>23.0</appSize>
+      <appVersion>2.2</appVersion>
+      <ageRating>5</ageRating>
+      <inAppPurchase>true</inAppPurchase>
+      <license>Proprietary</license>
+      <appCost>12.99</appCost>
+      <numberOfDownloads>395</numberOfDownloads>
+      <ratings>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Scotty</raterName>
+          <ratingComment>Poor App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Scotty</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Cary1987</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>RickyW</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>RickyW</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>Cary1987</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Poor App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Scotty</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Mary3</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Used once, never again</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Scotty</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>0</numberOfStars>
+          <raterName>RickyW</raterName>
+          <ratingComment>Too expensive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>1</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Poor App</ratingComment>
+        </models.Rating>
+      </ratings>
+      <productivityCategory>Utility</productivityCategory>
+    </models.ProductivityApp>
+    <models.EducationApp>
+      <developer>
+        <developerName>Microsoft</developerName>
+        <developerWebsite>www.microsoft.com</developerWebsite>
+      </developer>
+      <appName>Word</appName>
+      <appSize>1.0</appSize>
+      <appVersion>1.0</appVersion>
+      <ageRating>0</ageRating>
+      <inAppPurchase>false</inAppPurchase>
+      <license>Noncommercial</license>
+      <appCost>1.0</appCost>
+      <numberOfDownloads>19</numberOfDownloads>
+      <ratings>
+        <models.Rating>
+          <numberOfStars>2</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Scotty</raterName>
+          <ratingComment>Poor App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>5</numberOfStars>
+          <raterName>RickyW</raterName>
+          <ratingComment>Really intuitive</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>5</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>5</numberOfStars>
+          <raterName>Cary1987</raterName>
+          <ratingComment>Used once, never again</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Couldn&apos;t stop using app</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Used once, never again</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>MarkD</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Used once, never again</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>MarkD</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Eve101</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>4</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>3</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Great App</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>5</numberOfStars>
+          <raterName>JohnD</raterName>
+          <ratingComment>Loved the UX</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>5</numberOfStars>
+          <raterName>MarkD</raterName>
+          <ratingComment>Too slow</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>5</numberOfStars>
+          <raterName>Adam101</raterName>
+          <ratingComment>Too slow</ratingComment>
+        </models.Rating>
+        <models.Rating>
+          <numberOfStars>5</numberOfStars>
+          <raterName>MarkD</raterName>
+          <ratingComment>Too slow</ratingComment>
+        </models.Rating>
+      </ratings>
+      <subjectCategory>Maths</subjectCategory>
+      <level>1</level>
+    </models.EducationApp>
+  </list>
+</object-stream>

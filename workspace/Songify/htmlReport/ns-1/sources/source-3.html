@@ -1,0 +1,228 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Playlist</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: Playlist (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Playlist</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/57)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;import java.util.ArrayList;
+&nbsp;
+&nbsp;public class Playlist {
+&nbsp;    private String playlistnane; // valid length is 20 - default to the first 20 characters of input.
+<b class="nc">&nbsp;    private ArrayList&lt;Song&gt; songs = new ArrayList&lt;Song&gt;();  // should start empty</b>
+&nbsp;    private String description; // valid length is 30 - default to the first 30 characters of input.
+&nbsp;    private String coverPicture; // this is the name of the cover picture on the playlist. Validation - max length = 10
+<b class="nc">&nbsp;    private int likes = 0;  // No need to set this in the constructor as it should always start at 0.</b>
+&nbsp;
+<b class="nc">&nbsp;    public Playlist(String playlistnane, String description, String coverPicture) {</b>
+<b class="nc">&nbsp;        this.playlistnane = playlistnane;</b>
+<b class="nc">&nbsp;        this.description = description;</b>
+<b class="nc">&nbsp;        this.coverPicture = coverPicture;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getPlaylistnane() {
+<b class="nc">&nbsp;        return playlistnane;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public ArrayList&lt;Song&gt; getSongs() {
+<b class="nc">&nbsp;        return songs;</b>
+&nbsp;    }
+&nbsp;    public String getDescription() {
+<b class="nc">&nbsp;        return description;</b>
+&nbsp;    }
+&nbsp;    public String getCoverPicture() {
+<b class="nc">&nbsp;        return coverPicture;</b>
+&nbsp;    }
+&nbsp;    public int getLikes() {
+<b class="nc">&nbsp;        return likes;</b>
+&nbsp;    }
+&nbsp;    public void setPlaylistnane(String playlistnane) {
+<b class="nc">&nbsp;        this.playlistnane = playlistnane;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setSongs(ArrayList&lt;Song&gt; songs) {
+<b class="nc">&nbsp;        this.songs = songs;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setDescription(String description) {
+<b class="nc">&nbsp;        this.description = description;</b>
+&nbsp;    }
+&nbsp;    public void setCoverPicture(String coverPicture) {
+<b class="nc">&nbsp;        this.coverPicture = coverPicture;</b>
+&nbsp;    }
+&nbsp;    public void setLikes(int likes) {
+<b class="nc">&nbsp;        this.likes = likes;</b>
+&nbsp;    }
+&nbsp;public String listSongs(){
+<b class="nc">&nbsp;    if (songs.isEmpty()) {</b>
+<b class="nc">&nbsp;        return &quot;No songs in playlist.&quot;;</b>
+&nbsp;    } else {
+<b class="nc">&nbsp;        String listOfSOngs = &quot;&quot;;</b>
+<b class="nc">&nbsp;        for (int i = 0; i &lt; songs.size(); i++) {</b>
+<b class="nc">&nbsp;            listOfSOngs += i + &quot;: &quot; + songs.get(i) + &quot;\n&quot;;</b>
+&nbsp;        }
+<b class="nc">&nbsp;        return listOfSOngs;</b>
+&nbsp;    }
+&nbsp;}
+&nbsp;public String listVerifiedSongs(){
+<b class="nc">&nbsp;    if (songs.isEmpty()) {</b>
+<b class="nc">&nbsp;        return &quot;No songs in playlist.&quot;;</b>
+&nbsp;    } else {
+<b class="nc">&nbsp;        String listOfSongs = &quot;&quot;;</b>
+<b class="nc">&nbsp;        for (int i = 0; i &lt; songs.size(); i++) {</b>
+<b class="nc">&nbsp;            if (songs.get(i).getArtist().isVerified())</b>
+<b class="nc">&nbsp;                listOfSongs += i + &quot;: &quot; + songs.get(i) + &quot;\n&quot;;</b>
+&nbsp;        }
+<b class="nc">&nbsp;        if (listOfSongs == &quot;&quot;) return &quot;There are no verified songs on this playlist&quot;;</b>
+<b class="nc">&nbsp;        else return listOfSongs;</b>
+&nbsp;    }
+&nbsp;}
+&nbsp;    public String listSongsLongerThan(int length){
+<b class="nc">&nbsp;        if (songs.isEmpty()) {</b>
+<b class="nc">&nbsp;            return &quot;No songs in playlist.&quot;;</b>
+&nbsp;        } else {
+<b class="nc">&nbsp;            String listOfSongs = &quot;&quot;;</b>
+<b class="nc">&nbsp;            for (int i = 0; i &lt; songs.size(); i++) {</b>
+<b class="nc">&nbsp;                if (songs.get(i).getLength() &gt; length)</b>
+<b class="nc">&nbsp;                    listOfSongs += i + &quot;: &quot; + songs.get(i) + &quot;\n&quot;;</b>
+&nbsp;            }
+<b class="nc">&nbsp;            if (listOfSongs == &quot;&quot;) return &quot;There are no verified songs on this playlist&quot;;</b>
+<b class="nc">&nbsp;            else return listOfSongs;</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;    public String listOfSongsOfArtist(String artist){
+<b class="nc">&nbsp;        if (songs.isEmpty()) {</b>
+<b class="nc">&nbsp;            return &quot;No songs in playlist.&quot;;</b>
+&nbsp;        } else {
+<b class="nc">&nbsp;            String listOfSongs = &quot;&quot;;</b>
+<b class="nc">&nbsp;            for (int i = 0; i &lt; songs.size(); i++) {</b>
+<b class="nc">&nbsp;                if (songs.get(i).getArtist().equals(artist))</b>
+<b class="nc">&nbsp;                    listOfSongs += i + &quot;: &quot; + songs.get(i) + &quot;\n&quot;;</b>
+&nbsp;            }
+<b class="nc">&nbsp;            if (listOfSongs == &quot;&quot;) return &quot;There are no  songs on this playlist by &quot; + artist;</b>
+<b class="nc">&nbsp;            else return listOfSongs;</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;    public int getAverageSongLength(){
+<b class="nc">&nbsp;        int total = 0;</b>
+<b class="nc">&nbsp;        for( Song song : songs){</b>
+<b class="nc">&nbsp;            total += song.getLength();</b>
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;        return total / songs.size();</b>
+&nbsp;    }
+&nbsp;    public Song findSong(int index) {
+<b class="nc">&nbsp;        if (isValidIndex(index)) {</b>
+<b class="nc">&nbsp;            return songs.get(index);</b>
+&nbsp;        }
+<b class="nc">&nbsp;        return null;</b>
+&nbsp;    }
+&nbsp;    public boolean isValidIndex(int index) {
+<b class="nc">&nbsp;        return (index &gt;= 0) &amp;&amp; (index &lt; songs.size());</b>
+&nbsp;    }
+&nbsp;    @Override
+&nbsp;    public String toString() {
+<b class="nc">&nbsp;        return &quot;Playlist{&quot; +</b>
+&nbsp;                &quot;playlistnane=&#39;&quot; + playlistnane + &#39;\&#39;&#39; +
+<b class="nc">&nbsp;                &quot;, songs=&quot; + listSongs() +</b>
+&nbsp;                &quot;, description=&#39;&quot; + description + &#39;\&#39;&#39; +
+&nbsp;                &quot;, coverPicture=&#39;&quot; + coverPicture + &#39;\&#39;&#39; +
+&nbsp;                &#39;}&#39;;
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-02-12 20:29</div>
+</div>
+</body>
+</html>

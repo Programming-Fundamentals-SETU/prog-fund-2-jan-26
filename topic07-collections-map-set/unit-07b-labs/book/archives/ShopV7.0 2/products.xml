@@ -1,0 +1,16 @@
+<object-stream>
+  <list>
+    <Product>
+      <productName>24 inch monitor</productName>
+      <productCode>3423</productCode>
+      <unitCost>129.99</unitCost>
+      <inCurrentProductLine>true</inCurrentProductLine>
+    </Product>
+    <Product>
+      <productName>14 inch monitor</productName>
+      <productCode>23321</productCode>
+      <unitCost>109.99</unitCost>
+      <inCurrentProductLine>true</inCurrentProductLine>
+    </Product>
+  </list>
+</object-stream>

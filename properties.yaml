@@ -1,0 +1,26 @@
+highlightstyle : railscasts
+courseurl      : https://tutors.dev/course/prog-fund-2-jan-25
+credits        : Siobhan Roche, Mairead Meagher, SETU
+moodle        : https://moodle.wit.ie/course/view.php?id=197109
+slack         : https://progfund2024-2025.slack.com
+#zoom          : https://wit-ie.zoom.us/j/95690041209 didi
+ignorepin      : 1234
+auth           : 4
+ignore         :
+
+
+- topic000-assignments-prep
+#- topic00-assignments
+#- topic01-IntelliJ-JVM-and-IO
+#- topic02-primitive-arrays
+#- topic03-arraylists
+#- topic04-menu-and-crud
+#- topic05-persistence-xml-exceptions
+#- topic06-TDD-and-JUnit
+#- topic07-collections-map-set
+#- topic08-inheritance
+#- topic09-polymorphism-abstraction
+#- topic10-interfaces
+#- topic11-search-and-sort
+
+#- topic99-supplementary-materials

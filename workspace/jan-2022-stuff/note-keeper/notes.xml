@@ -1,0 +1,82 @@
+<object-stream>
+  <list>
+    <models.Note>
+      <noteTitle>Exam Boards</noteTitle>
+      <notePriority>5</notePriority>
+      <noteCategory>Work</noteCategory>
+      <isNoteArchived>false</isNoteArchived>
+      <items>
+        <models.Item>
+          <itemDescription>BSc Ord IT, Year 3</itemDescription>
+          <isItemCompleted>false</isItemCompleted>
+        </models.Item>
+        <models.Item>
+          <itemDescription>BSc Hons in Applied Computing, Year 1</itemDescription>
+          <isItemCompleted>false</isItemCompleted>
+        </models.Item>
+        <models.Item>
+          <itemDescription>BSc Hons in SSD, Year 2</itemDescription>
+          <isItemCompleted>false</isItemCompleted>
+        </models.Item>
+      </items>
+    </models.Note>
+    <models.Note>
+      <noteTitle>School Run</noteTitle>
+      <notePriority>5</notePriority>
+      <noteCategory>Home</noteCategory>
+      <isNoteArchived>false</isNoteArchived>
+      <items>
+        <models.Item>
+          <itemDescription>Secondary School 3:30</itemDescription>
+          <isItemCompleted>true</isItemCompleted>
+        </models.Item>
+        <models.Item>
+          <itemDescription>Primary School 2:30</itemDescription>
+          <isItemCompleted>false</isItemCompleted>
+        </models.Item>
+      </items>
+    </models.Note>
+    <models.Note>
+      <noteTitle>Hoover House</noteTitle>
+      <notePriority>1</notePriority>
+      <noteCategory>Home</noteCategory>
+      <isNoteArchived>false</isNoteArchived>
+      <items>
+        <models.Item>
+          <itemDescription>Hoover Upstairs</itemDescription>
+          <isItemCompleted>false</isItemCompleted>
+        </models.Item>
+      </items>
+    </models.Note>
+    <models.Note>
+      <noteTitle>Polish Furniture</noteTitle>
+      <notePriority>2</notePriority>
+      <noteCategory>Home</noteCategory>
+      <isNoteArchived>false</isNoteArchived>
+      <items/>
+    </models.Note>
+    <models.Note>
+      <noteTitle>Surf</noteTitle>
+      <notePriority>4</notePriority>
+      <noteCategory>Hobby</noteCategory>
+      <isNoteArchived>true</isNoteArchived>
+      <items/>
+    </models.Note>
+    <models.Note>
+      <noteTitle>Book Holiday</noteTitle>
+      <notePriority>5</notePriority>
+      <noteCategory>Home</noteCategory>
+      <isNoteArchived>false</isNoteArchived>
+      <items>
+        <models.Item>
+          <itemDescription>Book flights</itemDescription>
+          <isItemCompleted>true</isItemCompleted>
+        </models.Item>
+        <models.Item>
+          <itemDescription>Book hotel</itemDescription>
+          <isItemCompleted>true</isItemCompleted>
+        </models.Item>
+      </items>
+    </models.Note>
+  </list>
+</object-stream>

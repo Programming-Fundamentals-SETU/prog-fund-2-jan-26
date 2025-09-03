@@ -1,0 +1,14 @@
+<object-stream>
+  <list>
+    <MessagePost>
+      <author>Siobhan</author>
+      <message>Hi</message>
+      <likes>0</likes>
+    </MessagePost>
+    <MessagePost>
+      <author>Mairead</author>
+      <message>Hello</message>
+      <likes>0</likes>
+    </MessagePost>
+  </list>
+</object-stream>

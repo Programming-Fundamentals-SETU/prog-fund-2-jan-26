@@ -1,0 +1,21 @@
+<object-stream>
+  <list>
+    <models.EducationApp>
+      <developer>
+        <developerName>Microsoft</developerName>
+        <developerWebsite>www.microsoft.com</developerWebsite>
+      </developer>
+      <appName>Word</appName>
+      <appSize>34.0</appSize>
+      <appVersion>2.6</appVersion>
+      <ageRating>5</ageRating>
+      <inAppPurchase>true</inAppPurchase>
+      <license>Proprietary</license>
+      <appCost>1.99</appCost>
+      <numberOfDownloads>0</numberOfDownloads>
+      <ratings/>
+      <subjectCategory>General</subjectCategory>
+      <level>0</level>
+    </models.EducationApp>
+  </list>
+</object-stream>
