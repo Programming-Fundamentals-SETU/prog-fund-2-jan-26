@@ -10,17 +10,17 @@ ignore         :
 
 
 - topic000-assignments-prep
-#- topic00-assignments
-#- topic01-IntelliJ-JVM-and-IO
-#- topic02-primitive-arrays
-#- topic03-arraylists
-#- topic04-menu-and-crud
-#- topic05-persistence-xml-exceptions
-#- topic06-TDD-and-JUnit
-#- topic07-collections-map-set
-#- topic08-inheritance
-#- topic09-polymorphism-abstraction
-#- topic10-interfaces
-#- topic11-search-and-sort
+- topic00-assignments
+- topic01-IntelliJ-JVM-and-IO
+- topic02-primitive-arrays
+- topic03-arraylists
+- topic04-menu-and-crud
+- topic05-persistence-xml-exceptions
+- topic06-TDD-and-JUnit
+- topic07-collections-map-set
+- topic08-inheritance
+- topic09-polymorphism-abstraction
+- topic10-interfaces
+- topic11-search-and-sort
 
-#- topic99-supplementary-materials
+- topic99-supplementary-materials
