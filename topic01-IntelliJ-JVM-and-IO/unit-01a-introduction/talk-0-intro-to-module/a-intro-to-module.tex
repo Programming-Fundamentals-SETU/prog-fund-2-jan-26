@@ -9,22 +9,23 @@
 
 % for todo
 \usepackage{polyglossia}
+\setmainlanguage{english}
 \usepackage[table]{xcolor}
 \usepackage{easy-todo}
 \usepackage{menukeys}
 
 
 %% Change this for title information
-\newcommand\ExTitle{ Course Outline and Essential Information}
+\newcommand\ExTitle{ Course Outline and Essential Information\\}
 \author{Mair\'ead Meagher,Siobh\'an Roche, SETU}
 
-\newcommand\fullExTitle{Programming Fundamentals 2  \\Semester 2 - 2024 - 2025\\
-BSc(Hons) in Computer Science, \\
+\newcommand\fullExTitle{Programming Fundamentals 2  \\Semester 2 - 2025 - 2026\\}
+\newcommand\programmes{BSc(Hons) in Computer Science, \\
 BSc(Hons) in Computer Forensics and Security,\\
 BSc(Hons) in Physics with Modern Technology. \\
  }
-\newcommand\footerExTitle{\ExTitle -\ Programming Fundamentals 2}
-
+\newcommand\footerExTitle{Programming Fundamentals 2}
+\AtBeginDocument{\renewcommand*\contentsname{Table of Contents}}
 \pagestyle{fancy}
 \fancyhead{} % clear all header fields
 \renewcommand{\headrulewidth}{0pt} % no line in header area
@@ -35,14 +36,22 @@ BSc(Hons) in Physics with Modern Technology. \\
 %\usepackage[mathrm,colour,cntbysection]{czt}
 
 \begin{document}
-\begin{Huge}
+
 	\begin{center}
-	\fullExTitle 
-    \vspace{1cm}
-    Course Outline and Essential Information
-    \vspace{.1cm}
-    \end{center}
-\end{Huge}
+        \begin{textbf}
+          {\large
+           \ExTitle 
+           \vspace{1.5cm}
+	       \fullExTitle    
+               }
+\end{textbf}
+      \vspace{1cm}
+    \begin{normalsize}
+   
+     \programmes
+    \end{normalsize}
+   \end{center}
+
 \vspace{1.5cm}
 
 \begin{center}
@@ -63,17 +72,17 @@ BSc(Hons) in Physics with Modern Technology. \\
     \end{tabular}
 \end{center}
 
-
+\pagebreak
 \tableofcontents
 \pagebreak
 \section{Module Name}
 Programming  Fundamentals 2 \\
 \section{Lecturers}
-
-Siobh\'an Roche, \href{mailto:siobhan.roche@setu.ie}{siobhan.roche@setu.ie}, 
+For semester 2, 2025 - 2026, we switch things around a little bit:\\ \\
+\textbf{Siobh\'an Roche}, \href{mailto:siobhan.roche@setu.ie}{siobhan.roche@setu.ie}, 
 Lecturer in Department of Computing and Mathematics.\\
-Siobh\'an will take lectures and labs for groups W1 and W2 for  this module.\\
-Mair\'ead Meagher, \href{mailto:mairead.meagher@setu.ie}{mairead.meagher@setu.ie}, 
+Siobh\'an will now take lectures and labs for groups W1 and W2, and Physics for  this module.\\
+\textbf{Mair\'ead Meagher}, \href{mailto:mairead.meagher@setu.ie}{mairead.meagher@setu.ie}, 
 Lecturer in Department of Computing and Mathematics.\\
 Mair\'ead will take lectures and labs for groups W3 and W4 in this module.\\
 
@@ -81,43 +90,35 @@ Mair\'ead will take lectures and labs for groups W3 and W4 in this module.\\
 
 \section{How to reach us}\label{reach}
 \begin{itemize}
-    \item The quickest way to reach us  is via Slack\href{https://join.slack.com/t/progfund2024-2025/shared_invite/zt-2xopaq2n4-C2xBIwDMwZwnGvmMJ2RBlw}{here}..
+    \item The quickest way to reach us  is via Slack \href{https://join.slack.com/t/progfund2025-2026/shared_invite/zt-3nv01ulog-~fhKHtVzmIglPV8eQebiRQ}{here}..
     We will be using  this  as the main form of 'outside class' communication for this module. (This is the same channel that we used last semetser)
     \item You can also reach us via email: (see above).
     \item We are  available during work hours from Monday to Friday, 9am to 5pm. You can email/Slack us outside of these hours and we will reply as soon as We can,
 but always within three days. (If this does not happen, assume your contact has gone into spam etc. and please re-contact us.) When emailing us, please indicate what module you are taking as well as the nature of your query in the
 subject line, and do not forget to use an appropriate greeting and sign off. It’s important to be polite and to treat one another with
 respect; let’s start as we mean to go on.
-    \item All lectures etc. will happen in person as per timetable unless otherwise indicated. 
-
 \end{itemize}
 \section{Learning Technologies}
 In order to maximise our ability to connect with one another and to make our classes as accessible as possible for everyone, we will use both synchronous and
 asynchronous learning technologies during this module. They will include:
 \begin{itemize}
-    \item Face-to-face lectures and lab sessions.
+    \item (2)lectures , (1)tutorial and (2)lab sessions per week.
     \item \textbf{Moodle} - our learning management system, where you can find links to the notes and a todo list each week. 
-    The link to this course is \href{https://moodle.wit.ie/course/view.php?id=206082}{here}.
+    The link to this course is \href{https://moodle.setu.ie/course/section.php?id=7400592}{here}.
  Each week you will be given a list of tasks that you should have completed each week.
-\
 
 
-    \item \textbf{tutors} - This static website will hold all the notes, labs and links to videos (link is \href{https://tutors.dev/course/prog-fund-2-jan-25}{here}. 
+
+    \item \textbf{tutors} - We continue to use tutors for this module. This static website will hold all the notes, labs and links to videos (link is \href{https://tutors.dev/course/prog-fund-2-jan-26}{here}). 
     This site will be updated each week to include the following week's material.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=.9\textwidth]{img/tutors.png}
-    \caption{Example of tutors website}
-    \label{tutors}
-\end{figure}
-\\
+
 \item \textbf{GitHub Classroom} - We will use GitHub Classroom for all assignments. 
 \item \textbf{Slack} - We will use Slack for all communication within the module. (see \ref{reach} for details).
 
 
 \end{itemize}
 
-\pagebreak
+
 \section{Module objectives /\ Learning outcomes}
 On completion of this module students should be able to: 
 \begin{enumerate}
@@ -126,60 +127,64 @@ On completion of this module students should be able to: 
    \item Modify and expand small applications.
    \item Write small applications that use simple UI, computation and data structures.
    \item Develop techniques to effectively test, debug and document small applications.
-   \item Analyse and explain how the above applications work.
+   \item Analyse and explain how the above applications work.  
 \end{enumerate}
 The full module descriptor is available on the Introduction page on Moodle.
-Each week, we will have 2 lectures (one hour each) and one 3 hour lab where we will practice the topics introduced in lectures. Usually, we will have the lab material covered before the lab times.
+Each week, we will have 2 lectures (one hour each), one tutorial hour  and one 2 hour lab where we will practice the topics introduced in lectures. Usually, we will have the lab material covered before the lab times.
 \pagebreak
 \section{Assessment Breakdown}
-The asessment in this module is made up of one \textit{formative} and two \textit{summative} assignments.
+The asessment in this module is made up of one \textit{formative} and two \textit{summative} assessments.
 \begin{center}
     \begin{figure}[h]
         \centering
-        \includegraphics[width=.5\textwidth]{img/schedule-excel.png}
+        \includegraphics[width=.7\textwidth]{img/schedule-excel.png}
         \caption{Schedule of assessment}
         \label{ass-exel-sheet}
     \end{figure}
 \end{center}
 Your module assessment is is made up of the following:  
     \begin{itemize}
-        \item 0\% - A \textit{formative} assignment (doing this will help you get started back and ready for the new material, including getting used to GitHub Classroom).
-
-        \item 100\% - Two \textit{summative} assignments - these make up your final module marked. They are each worth 50\%. Further details will be available later for these.
-    \end{itemize}
+   \item \textbf{Attendance at tutorials (10) - 10\%.} You are  asked to attend your tutorials where written problem sheets will be given and so that you can practice any new concepts. 
+   The tutorial will usually take place in the first non-lecture hour of the week (i.e. before you start your labs)
+        \item \textbf{Written in class test - 40\%.} This will be a test based on the material covered in the first half of the module and largely based on tutorial sheets and labs. 
+        \item \textbf{Programming Assignment  - 50\%. }
+        \item   You will be asked to solve a problem using inheritance, etc. The problem will be fully specified and you will be 
+        asked to implement it in \textbf{\textit{Java}} using the \textbf{\textit{IntelliJ} }environment. You will also be asked to use GitHub\footnote{https://classroom.github.com/} Classroom to (regularly)submit your code.
+ \end{itemize}
 
 \begin{center}
     \begin{table}[h]
     \centering
-    \begin{tabular}{|c |  c | c | c | c| c |}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c | c | c | c | c | c | c|}
     
      \hline
 
      \rowcolor{red!60}
-     \textbf{Assignment}& Formative Assign  &  Prog assign  & Prog assign\\
+     \textbf{Assignment}& Formative Assign  &  Inclass written test & Prog assign & Tutorial attendance\\
      \rowcolor{red!60}
-     &   & 1 &  2  \\
+     &   & 1 &  2  & 3\\
      \rowcolor{green!30}
      \hline
-     \textbf{Handout} & 03/02(Week 3) & 03/03 (Week 6)& 08/04 (Week 11)  \\
+     \textbf{Handout} & 05/01(Week 1) & 02/03 (Week 6) & 13/04 (Week 10) & Weeks 1 - 12 \\
      \rowcolor{red!30}
      \hline
-     \textbf{Deadline}& 18:00, Friday & 18:00 Sunday  & 18:00, Sunday \\
+     \textbf{Deadline}& 18:00, Friday &  & 18:00, Sunday & Attendance taken\\
      \rowcolor{red!30}
-     &  14/02 (Week 4) & 31/03 (Week 9) & 05/04(Week 12) \\
+     &  30/01 (Week 2) & 02/03 (Week 6) & 01/05(Week 12) & in class \\
      \rowcolor{red!30}
     
      \hline
      \rowcolor{blue!50}
-     \textbf{In class test} &none & none & Week 13 \\
+     \textbf{In class test} &none & none & Week 13 & \\
      \hline
      \rowcolor{blue!35}
-     \textbf{Interview} &none & Week 10 &Week 13/14 \\
+     \textbf{Interview} &none & Week 10 &Week 13/14&  \\
      \hline
      \rowcolor{red!40}
-     \textbf{Percentage} & 0\% & 50\% & 50\%  \\
+     \textbf{Percentage} & 0\% & 40\% & 50\% & 10\%\\
      \hline
-    \end{tabular}
+    \end{tabular}  }
     \caption{Full assessment schedule}
     \end{table}
 \end{center}
@@ -187,15 +192,29 @@ Your module assessment is is made up of the following:
 
 
 
-For each of the \textit{summative} assignments, you will be asked to be available to be interviewed on your submission. 
-It is imperative that you make yourself available for these interviews as scheduled as the interviews are a mandatory part of the assessment process.
+\section{Submission and Marking}
+\begin{itemize}
+\item
+The \textbf{formative assignment} is to be submitted via Moodle 18:00 on Friday, 30th January, 2026 (Week 2). 
+For this you are asked to port your Semester 1 programming assignment from BlueJ to IntelliJ.
+Feedback will be given to you in lab. You can use this as an opportunity to clarify any issues you may have had with the assignment (Semester 1 programming assignment) or any other issues.
+There are no marks for this assignment.
 
-In the case of the first assignment, you will get your marks back as soon as is possible, but usually within a week.
-If you are wondering why you got a particular mark, \textbf{always} ask us. The marking schemes are very comprehensive and we are happy to go through the breakdowns with you.
-We don't give this comprehensive feedback by default (this is to speed up the return of the marks) but are happy to engage about them later.
 
-In the case of the second assignment, they are not published as the final mark is overseen by the external examiner and the finalised mark is released only after the examinations are fully processed.
+\item    The \textbf{first summative assignment} (in-class written test \textbf{worth 40\%}) will take place during class time in Week 6 (date to be confirmed when the timetable is settled). Your results 
+will be made available to you on Moodle as soon as possible after the test, usually within a week. This in-class test will be based on the material covered in the first half of the module and largely based on tutorial sheets, quizzes and labs.
 
+\item The \textbf{second summative assignment} (programming assignment \textbf{worth 50\%}) will be due at the end of Week 12. 
+As per Semester 1, you will be asked to attend a written test on the assignment in early Week 13, (time and date to be confirmed nearer the time).
+You are asked to make yourself available to be interviewed on your submission after the test. If we ask you to attend an interview, you will be given a time slot in Week 13  and it is your responsibility to attend at that time in person. 
+
+Failure to attend the interview (if we ask you to do so) will result in a zero multiplier being used, resulting in an overall assignment mark of 0.
+
+
+
+In the case of the this (second) assignment, the marks are not published as the final mark is overseen by the external examiner and the finalised mark is released only after the examinations are fully processed.
+\item \textbf{Tutorial attendance} \textbf{(10\%)} will be recorded each week in your tutorial class. The best 10 out of 12 weeks will be counted.
+\end{itemize}
 
 For the programming assignments, a marking scheme will be published with the specification of the assignment. As always, \textbf{be sure that you are aware of the marking scheme}.
 If there are marks going for a particular part, and you haven't attempted that part, there is nothing We can do. Always make it easy for the examiner to give you marks!
@@ -209,12 +228,12 @@ The School of Science and Computing  at South East Technological University are 
 Academic misconduct, including, but not limited to, cheating may result in a mark of zero for the assignment as well as disciplinary action.
  Additional sanctions may by imposed depending on the case. You are responsible for ensuring that you do not get involved in cheating of any kind.
 
- With regard to (summative)  programming submissions, we will ask you to either:
+ With regard to the (summative)  programming submissions, we will ask you to either:
  \begin{itemize}
     \item sit a written (closed-book\footnote{a closed book test is one where you do not have access to any online or offline resources}) test on the submission. 
     Depending on the results of the test, we may ask you to be interviewed on the submission. This \textbf{will} happen for the second (final) assignment. 
   If you are not asked to be interviewed, you will be given full marks for your interview mark. 
-    \item be interviewed on the submission. (In this case every student is interviewed)
+    \item usually we can facilitate early interviews for early submissions. If you submit early, you may chose to be interviewed early.
  \end{itemize}
 
 Your attendance for either option is mandatory and failure to attend will result in a zero multiplier being used, resulting in an overall assignment mark of 0. 
@@ -225,8 +244,8 @@ Your attendance for either option is mandatory and failure to attend will result
  Please do not be tempted to use this route.
  It is too risky and the penalty can affect your academic future.
 
-Due to prevalence of ChatGPT in the general ecosphere, we now need to re-iterate that use of ChatGPT is not allowed, as usual in these cases without referencing. 
- Use of ChatGPT(where referenced), even with good understanding will result in significantly lower marks. 
+Due to prevalence of AI Bots in the general ecosphere, we now need to re-iterate that use of AI Bots must be used with care. It is not allowed, as usual in these cases \textbf{without} referencing. 
+ Use of AI Bots(where referenced), even with good understanding will result in significantly lower marks. 
  
  Use of helpers like \textbf\textit{CoPilot} are easily available but it is imperative that you do not simply accept suggestions without fully understanding them. 
  If you do, this should be clearly referenced. You should also be able to whow how you would apply such a suggestion in a different context.
@@ -234,7 +253,7 @@ Due to prevalence of ChatGPT in the general ecosphere, we now need to re-iterate
 
 \section{Important note about engagement in the module  and time management}
  Part of active engagement  for any module involves a degree of time management.
- As part of this module, we will be asking you to complete exercises, between class times. 
+ As part of this module, we will be asking you to complete tutorial sheets, labs and quizzes between class times. 
  These will not be graded but, by engaging in these tasks at the time, you will be in a better position to
  understand the next part of the module. We will approach the module in a step-by-step manner, so opting out at any part will make it more difficult for you to keep up.
  This is where time management will come in - you need to be careful to ensure that you keep a balance between modules.
@@ -247,106 +266,6 @@ Due to prevalence of ChatGPT in the general ecosphere, we now need to re-iterate
     \item Asking questions means that the pace of the lecture/ labs will suit you better - We will always keep going if there are no questions!
  \end{enumerate}
 
- \section{Netiquette and Decorum}
- In all of our asynchronous discussions online, e.g. Slack,  it is important that we foster a supportive, safe,
- and engaging learning environment.
- Diverse views are encouraged and welcomed and should be based on evidence.
- You are free to express your views and ideas as long as your words or action do not demean, intimidate, or intend
-  to violate the rights and dignities of others. Hate speech is not acceptable and may result in disciplinary action.
-  Hate speech includes words or actions that threaten or target the safety and liberties of an individual or group.
-
- \subsection{Netiquette}
- The word netiquette is a combination of ’net’ (from internet) and ’etiquette’. It means respecting other users’ views and displaying
- courtesy when posting your views to online discussion groups.
- \begin{itemize}
-    \item Remember that there is a human being on the other end of your communication
-    \item Treat that human being with respect
-    \item Do not post a message that you would not be willing to communicate in a face to face environment.
-    \item Keep it courteous
-    \item Be kind and professional:  Online communication comes with a level of anonymity that doesn’t exist when you’re talking to someone face-to-face.
-    Sometimes this leads people to behave rudely when they disagree with one another. Online students probably don’t have the complete anonymity that comes with using a screen name, but you could still fall prey to treating someone poorly because of the distance between screens. Make a point to be kind and respectful in your comments—even if you disagree with someone.
-    \item Extend your good nature online: The digital world is an increasingly important part of our lives. We should be our best selves there too. The manners our parents taught us apply everywhere.
-    \item Promote healthy discussions:
-    To get the most out of online forums, a useful netiquette guideline is to promote healthy discussion. You can help your online community by posing questions, sharing experiences, providing positive feedback, asking follow-up questions, and referring to information sources. Being a positive contributor is better than being a critic, troll or other negative force.
-    \item  Respect others as equals:
-    Show a little respect and humility online. Think – that 'idiot' who wrote the opinion you completely disagree with is a human being. They have feelings and experiences. They may believe passionately in what they're saying. And they may actually be right.
-    Even if you're feeling dismissive or knowledgeable or whatever, inject respect into your writing. That's just being fair to others.
-    \item You're here to learn and contribute, not dictate:
-    While we all like to think that our opinion matters, you'll gain more from internet forums by approaching them as a learner.
-    When everyone is trying to express their view rather than hearing from others, forums become noisy, crowded with posts, and disjointed.
-    A more polite and effective path is to adopt a listening mode. Read posts carefully, ask questions, and write something only if it offers value to the discussion.
-    \item Read first:
-    Take some time to read through each of the previous discussion post responses before writing your own response. Remember, discussions can move fairly quickly so it’s important to absorb all of the information before crafting your reply. Building upon a classmate’s thought or attempting to add something new to the conversation will show your instructor you’ve been paying attention.
-    \item Remember, your words are permanent: Be careful with what you post online. Once it's out there, you may not be able to get it back.
-    \item Make your point in a nice way:
-    Write in a way to get the kind of reaction you want. A little thoughtfulness, strategy and netiquette can go a long way in online discussions.
-    Your first draft of an online post is unlikely to be your best. Are you disagreeing with someone in a flippant way? Have you misinterpreted what they really meant? Will you put people off with the tone of your text.
-    \item Pause before you post:
-    It's worth taking a moment to reflect before hitting the send button.
-    When you're using a computer, you're normally clicking, and scrolling and typing all over the place. Most things are done quickly. But one time when it's important to slow down is when you're about to post something online for all the world to see. Pause and reflect for a second. Are you truly comfortable with what you're sending?
-    \item Respect the opinion of your classmates:
-    If you feel the need to disagree, do so respectfully and acknowledge the valid points in your classmate's argument. If you reply to a question from a classmate, make sure your answer is accurate!
-    \item Forgive and Forget:
-    If you’re offended by something another student says online, keep in mind that you may have misunderstood their intentions. Give them the benefit of the doubt.
-
- \end{itemize}
-
- \subsection{Suggested Filing System}
-
- This might be a good time to review your folder setup.  The  suggested filing system in  Fig \ref{filing} was suggested at the start of Semester 1. 
- Now that you have used it(hopefully!) you should be in a better position to improve the structure for yourself. 
-
- A good time to do this is at the start of the semester. Try it now! 
-
- Your aim should be to improve the efficiency and effectiveness of your filing system 
-
-
- \begin{figure}[h]
- \centering
- \includegraphics[width=.6\textwidth]{img/filing.png}
- \caption{Suggested Filing System}
- \label{filing}
- \end{figure}
- \newcolumntype{a}{>{\columncolor{green}}c}
- \newcolumntype{b}{>{\columncolor{red}}c}
- \colorlet{shade1}{green!80!red}
- \colorlet{shade2}{green!70!red}
- \colorlet{shade3}{red!90!red}
- \colorlet{shade4}{red!80!red}
- \colorlet{shade5}{yellow!20!red}
  
- \begin{table}[h]
- \begin{center}
-     \begin{tabular}{ | m{15em}   |m{15em}  }    
-         %  \begin{tabular}{ |>{\columncolor[gray]{0.8}} m{10em} |b m{10em}|  } 
-         \hline
-     \rowcolor{shade3}
-     \cellcolor{shade1}DO's & DON'T's   \\ 
-      \hline  
-      \rowcolor{shade4}
-      \cellcolor{shade2} Set up the folder structure and continue to use it 
-      & Set up and use it ‘an odd time’
-      \\  
-      \rowcolor{shade4}
-      \hline
-      \cellcolor{shade2}Set up ‘favourites’ folder in Explorer/Finder for your ‘college’ subfolder
-  & Use Downloads or Desktop as the root folder for ‘college  \\ 
-  \hline
-      \rowcolor{shade4}
-      \cellcolor{shade2}Store data (weekly homework, etc.) using this structure
-      &Mix up data and programs in college folder
-      \\ 
-      \hline
-      \rowcolor{shade4}
-      \cellcolor{shade2}Store your software (e.g. Processing) in another folder e.g. /dev
-  &   \\ 
-      \hline
-  
-   
-     \end{tabular}
-     \caption{Do's and Don't's of Filing Systems}
-     \label{tab:dos-donts}
- \end{center}
- \end{table}
  
 \end{document}
