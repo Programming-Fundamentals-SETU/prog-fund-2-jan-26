@@ -1,4 +1,4 @@
 OO Recap
 
-objects · classes · methods · toString (Vid 23m)
+objects · classes · methods · toString 
   
