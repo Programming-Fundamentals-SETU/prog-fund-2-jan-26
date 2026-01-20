@@ -1,6 +1,6 @@
 ---
 icon:
-  type: fluent-emoji-high-contrast:billed-cape
+  type: ph:baseball-cap-thin
   color: red
 ---
 OO Recap
