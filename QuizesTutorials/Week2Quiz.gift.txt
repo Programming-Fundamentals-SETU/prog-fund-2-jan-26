@@ -1,0 +1,89 @@
+::Q1_Arrays_Definition::
+What best describes an array in Java?
+{
+= A collection of variables of the same type stored in contiguous memory locations
+~ A collection of variables of different types
+~ A dynamically growing collection that tracks its own size
+~ A single variable that can store multiple values of different types
+}
+
+::Q2_Array_Indexing::
+What is the index of the first element in a Java array?
+{
+= 0
+~ 1
+~ -1
+~ It depends on the array type
+}
+
+::Q3_Primitive_vs_Object_Arrays::
+What is true about an array of objects (e.g. String[] or Product[]) when it is first created?
+{
+= All elements are initialised to null
+~ All objects are automatically created
+~ All elements contain empty objects
+~ All elements contain default values like 0 or false
+}
+
+::Q4_NullPointerException::
+Which of the following will cause a NullPointerException if words[0] is null?
+{
+= words[0].length();
+~ words.length;
+~ System.out.println(words);
+~ words = new String[4];
+}
+
+::Q5_Array_Limitations::
+Which of the following is a limitation of arrays?
+{
+= Arrays have a fixed size once created
+~ Arrays automatically grow when full
+~ Arrays cannot store objects
+~ Arrays track how many elements are used
+}
+
+::Q6_Iteration_Definition::
+What does iteration mean in programming?
+{
+= Repeating a set of instructions
+~ Choosing between alternatives
+~ Storing multiple values in memory
+~ Declaring variables
+}
+
+::Q7_While_Loop_Control::
+What is the purpose of a loop control variable (LCV) in a while loop?
+{
+= To control how many times the loop executes
+~ To store user input
+~ To print values to the console
+~ To stop compilation errors
+}
+
+::Q8_While_Loop_Errors::
+What common mistake can cause an infinite while loop?
+{
+= Forgetting to update the loop control variable
+~ Declaring the loop variable
+~ Using System.out.println inside the loop
+~ Initialising the loop control variable
+}
+
+::Q9_Store_Class_Responsibility::
+In Shop V2.0, what is the main responsibility of the Store class?
+{
+= Maintaining a collection of Product objects using an array
+~ Reading product details from the user
+~ Printing menus to the console
+~ Containing the main() method
+}
+
+::Q10_Store_Add_Method::
+What does the Store add(Product product) method return?
+{
+= A boolean indicating whether the product was added successfully
+~ The Product that was added
+~ The total number of products
+~ The index where the product was added
+}
