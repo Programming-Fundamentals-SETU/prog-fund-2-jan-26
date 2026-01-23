@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category>
+      <text>$course$/IntroToModule</text>
+    </category>
+  </question>
+
+  <question type="multichoice">
+    <name><text>Module theme</text></name>
+    <questiontext format="html">
+      <text><![CDATA[This module is titled <strong>Content, Structure and the JVM</strong>. What is the main programming language it focuses on?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The module content and technologies shown revolve around Java and the JVM.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Java</text>
+      <feedback><text>✅ Correct — Java is the main language in this module.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Python</text>
+      <feedback><text>❌ Not this module — it focuses on Java and the JVM.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Haskell</text>
+      <feedback><text>❌ Different paradigm/module — not the focus here.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>C#</text>
+      <feedback><text>❌ Not listed as the core language for this module.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Lecturer for W1/W2 groups</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which lecturer/tutor is listed for <strong>Groups W1 (Forensics and Physics) and W2</strong>?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The slides list group allocations for each lecturer.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Siobhan Roche</text>
+      <feedback><text>✅ Correct — Siobhan Roche is listed for W1 and W2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Mairead Meagher</text>
+      <feedback><text>❌ W3 and W4 are listed under Mairead Meagher.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Both lecturers</text>
+      <feedback><text>❌ The groups are split between the two lecturers.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Not specified</text>
+      <feedback><text>❌ The slides explicitly list the group allocations.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Lecturer for W3/W4 groups</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which lecturer/tutor is listed for <strong>Groups W3 and W4</strong>?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[Group allocations are stated on the lecturer slide.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Mairead Meagher</text>
+      <feedback><text>✅ Correct — Mairead Meagher is listed for W3 and W4.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Siobhan Roche</text>
+      <feedback><text>❌ Siobhan Roche is listed for W1 and W2.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Both lecturers</text>
+      <feedback><text>❌ The groups are split, not shared.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Not specified</text>
+      <feedback><text>❌ The group allocations are explicitly given.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Contact email: Siobhan</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What is Siobhan Roche’s email address (as shown on the slides)?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The lecturer contact details are provided on the introduction slides.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>siobhan.roche@setu.ie</text>
+      <feedback><text>✅ Correct — that’s the email shown for Siobhan Roche.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>mairead.meagher@setu.ie</text>
+      <feedback><text>❌ That’s Mairead Meagher’s email.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>siobhan@setu.ie</text>
+      <feedback><text>❌ Close, but not the address shown on the slide.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>roche.siobhan@setu.ie</text>
+      <feedback><text>❌ Not the format used on the slide.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Contact email: Mairead</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What is Mairead Meagher’s email address (as shown on the slides)?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The lecturer contact details are provided on the introduction slides.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>mairead.meagher@setu.ie</text>
+      <feedback><text>✅ Correct — that’s the email shown for Mairead Meagher.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>siobhan.roche@setu.ie</text>
+      <feedback><text>❌ That’s Siobhan Roche’s email.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>mairead@setu.ie</text>
+      <feedback><text>❌ Not the address shown on the slide.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>meagher.mairead@setu.ie</text>
+      <feedback><text>❌ Not the format used on the slide.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Weeks of delivery</text></name>
+    <questiontext format="html">
+      <text><![CDATA[How many weeks of <strong>delivery</strong> are listed for this module?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The module structure slide states the number of delivery weeks.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>12 weeks</text>
+      <feedback><text>✅ Correct — 12 weeks of delivery are listed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>10 weeks</text>
+      <feedback><text>❌ Too low — the slide states 12 weeks.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>14 weeks</text>
+      <feedback><text>❌ The calendar spans longer, but delivery is 12 weeks.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>16 weeks</text>
+      <feedback><text>❌ Not stated on the slide.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Weekly lectures and labs</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What weekly pattern is shown under <strong>Module Structure &amp; Delivery</strong>?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The slide summarises weekly lectures and lab hours.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>2 lectures and 3 hours of labs</text>
+      <feedback><text>✅ Correct — that’s exactly what’s listed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>3 lectures and 2 hours of labs</text>
+      <feedback><text>❌ Not what the slide shows.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>1 lecture and 4 hours of labs</text>
+      <feedback><text>❌ Not what the slide shows.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Lectures only (no labs)</text>
+      <feedback><text>❌ Labs are explicitly included.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Assessment type</text></name>
+    <questiontext format="html">
+      <text><![CDATA[How is the module assessed according to the slides?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The module content slide states the assessment approach.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>100% Continuous Assessment (CA)</text>
+      <feedback><text>✅ Correct — the slide says 100% CA.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>50% exam and 50% CA</text>
+      <feedback><text>❌ Not for this module (it’s 100% CA).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Final exam only</text>
+      <feedback><text>❌ The slide specifies continuous assessment.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Attendance only</text>
+      <feedback><text>❌ Assessment is based on assignments.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>CA components</text></name>
+    <questiontext format="html">
+      <text><![CDATA[What are the components of the module’s continuous assessment?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The slides list the CA items explicitly.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Assignment 1 and Assignment 2</text>
+      <feedback><text>✅ Correct — two assignments are listed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Weekly quizzes only</text>
+      <feedback><text>❌ Quizzes aren’t listed as the CA items.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>One project only</text>
+      <feedback><text>❌ The slides list two assignments.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>A midterm and a final exam</text>
+      <feedback><text>❌ Exams are not listed as assessment.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Menu-driven systems</text></name>
+    <questiontext format="html">
+      <text><![CDATA[One content focus is <strong>Menu Driven Systems</strong>. What type are these described as?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The module content slide clarifies the style of menu-driven systems.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Console-based</text>
+      <feedback><text>✅ Correct — they’re described as console-based.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Web-based</text>
+      <feedback><text>❌ Not stated — the slide says console-based.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Mobile app-based</text>
+      <feedback><text>❌ Not stated on the slide.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>GUI-only desktop apps</text>
+      <feedback><text>❌ The slide points to console-based systems.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Persistence format</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which topic is explicitly linked with <strong>CRUD and Persistence</strong> on the module content slide?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The slide explicitly mentions the persistence format.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>XML</text>
+      <feedback><text>✅ Correct — persistence is linked to XML.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>JSON</text>
+      <feedback><text>❌ JSON isn’t mentioned there.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>SQL</text>
+      <feedback><text>❌ Databases aren’t mentioned in that bullet.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>CSV</text>
+      <feedback><text>❌ CSV isn’t mentioned.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Exceptions</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which of the following is explicitly listed as a module content topic related to handling problems in code?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The module content slide lists ‘Exceptions’.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Exceptions</text>
+      <feedback><text>✅ Correct — ‘Exceptions’ is explicitly listed.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Pointers</text>
+      <feedback><text>❌ Not a topic listed in this module overview.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Memory allocation in C</text>
+      <feedback><text>❌ Not relevant to this module’s stated content.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Assembler debugging</text>
+      <feedback><text>❌ Not listed.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Object-oriented topics</text></name>
+    <questiontext format="html">
+      <text><![CDATA[Which set of topics is explicitly listed together on the module content slide?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The module content slide lists several OO concepts as a group.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Inheritance, Polymorphism and Abstraction</text>
+      <feedback><text>✅ Correct — those three are listed together.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Recursion, laziness and purity</text>
+      <feedback><text>❌ Those are functional-programming topics.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>HTML, CSS and JavaScript</text>
+      <feedback><text>❌ Web topics are not listed here.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Threads, locks and deadlocks</text>
+      <feedback><text>❌ Not listed in the module content bullets.</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Reading weeks</text></name>
+    <questiontext format="html">
+      <text><![CDATA[In the calendar slide, what are the mid-term and Easter weeks labelled as?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The calendar explicitly labels these as non-tuition weeks.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>Reading</text>
+      <feedback><text>✅ Correct — they’re labelled as reading weeks.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Exams</text>
+      <feedback><text>❌ Exams are not listed there.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Work placement</text>
+      <feedback><text>❌ Not mentioned.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>Holiday only (no learning)</text>
+      <feedback><text>❌ They’re still academic weeks (reading).</text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Start of Week 1</text></name>
+    <questiontext format="html">
+      <text><![CDATA[According to the calendar, on what date does <strong>Week 1 (Tuition)</strong> start?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[The calendar table lists the start dates for each week.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100">
+      <text>19/01/2026</text>
+      <feedback><text>✅ Correct — Week 1 (Tuition) starts on 19/01/2026.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>26/01/2026</text>
+      <feedback><text>❌ That’s Week 2 (Tuition).</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>16/02/2026</text>
+      <feedback><text>❌ That’s the start of the Mid-term Reading week.</text></feedback>
+    </answer>
+    <answer fraction="0">
+      <text>04/05/2026</text>
+      <feedback><text>❌ That’s the Study Week (Reading).</text></feedback>
+    </answer>
+  </question>
+</quiz>
