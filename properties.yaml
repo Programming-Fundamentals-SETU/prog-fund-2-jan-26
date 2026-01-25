@@ -12,7 +12,7 @@ ignore         :
 - topic000-assignments-prep
 - topic00-assignments
 # - topic01-IntelliJ-JVM-and-IO
-- topic02-primitive-arrays
+# - topic02-primitive-arrays
 - topic03-arraylists-ONHOLD
 - topic03-arraylists
 - topic04-menu-and-crud
