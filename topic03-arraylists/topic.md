@@ -1,3 +1,9 @@
-# 3: ArrayLists
+---
+icon:
+  type: codicon:combine
+  color: sienna
+---
+# 2: Introducing ArrayLists
 
-Collections · Generic Classes · ArrayList · loops · for each loop · algorithms for collections
+primitive arrays · arraylist
+
