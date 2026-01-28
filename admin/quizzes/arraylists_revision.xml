@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>ArrayList Purpose</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Why are ArrayLists preferred over arrays when grouping objects?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>They can grow and shrink dynamically</text>
+    <feedback><text><![CDATA[Correct. ArrayLists automatically manage their size.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>They store elements in fixed memory locations</text>
+    <feedback><text><![CDATA[Incorrect. Fixed memory locations apply to arrays.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>They store primitive types directly</text>
+    <feedback><text><![CDATA[Incorrect. ArrayLists store objects only.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>They are faster than arrays in all cases</text>
+    <feedback><text><![CDATA[Incorrect. Performance depends on usage.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>Generic Type Parameter</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What does &lt;String&gt; mean in ArrayList&lt;String&gt;?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>It specifies the type of objects stored in the ArrayList</text>
+    <feedback><text><![CDATA[Correct. This makes the ArrayList type-safe.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>It creates a new String object</text>
+    <feedback><text><![CDATA[Incorrect. No object is created here.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>It limits the size of the ArrayList</text>
+    <feedback><text><![CDATA[Incorrect. Size is managed automatically.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>It converts primitives into objects</text>
+    <feedback><text><![CDATA[Incorrect. This is unrelated to generics.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>Importing ArrayList</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which import statement is required to use ArrayList?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>import java.util.ArrayList;</text>
+    <feedback><text><![CDATA[Correct. ArrayList belongs to the java.util package.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>import java.lang.ArrayList;</text>
+    <feedback><text><![CDATA[Incorrect. java.lang does not contain ArrayList.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>import java.io.ArrayList;</text>
+    <feedback><text><![CDATA[Incorrect. java.io is for I/O classes.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>No import is required</text>
+    <feedback><text><![CDATA[Incorrect. ArrayList must be imported.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>Adding Elements</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which method is used to add an element to an ArrayList?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>add()</text>
+    <feedback><text><![CDATA[Correct. add() inserts an element into the list.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>insert()</text>
+    <feedback><text><![CDATA[Incorrect. insert() is not an ArrayList method.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>append()</text>
+    <feedback><text><![CDATA[Incorrect. append() does not exist for ArrayList.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>put()</text>
+    <feedback><text><![CDATA[Incorrect. put() is used with maps.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>size Method</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What does the size() method of an ArrayList return?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>The number of elements currently stored</text>
+    <feedback><text><![CDATA[Correct. size() tracks how many items are stored.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The maximum capacity</text>
+    <feedback><text><![CDATA[Incorrect. Capacity is hidden.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The last valid index</text>
+    <feedback><text><![CDATA[Incorrect. Indices start at 0.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The memory size</text>
+    <feedback><text><![CDATA[Incorrect. Memory size is not exposed.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>get Method</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What does notes.get(2) do?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>Returns the element stored at index 2</text>
+    <feedback><text><![CDATA[Correct. get(index) retrieves an element.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Removes the element at index 2</text>
+    <feedback><text><![CDATA[Incorrect. remove() deletes elements.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Prints the element at index 2</text>
+    <feedback><text><![CDATA[Incorrect. get() does not print.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Adds a new element at index 2</text>
+    <feedback><text><![CDATA[Incorrect. add() inserts elements.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>Removing Elements</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What happens to ArrayList indexing when an element is removed?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>Elements after it shift left</text>
+    <feedback><text><![CDATA[Correct. ArrayList reindexes automatically.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Indices remain unchanged</text>
+    <feedback><text><![CDATA[Incorrect. Indices are updated.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The list becomes empty</text>
+    <feedback><text><![CDATA[Incorrect. Only one element is removed.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>A runtime error occurs</text>
+    <feedback><text><![CDATA[Incorrect. Removal is safe.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>For-each Loop Limitation</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which is a limitation of the for-each loop when used with ArrayLists?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>You cannot safely remove elements</text>
+    <feedback><text><![CDATA[Correct. Removing during for-each causes runtime errors.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>You must use an index</text>
+    <feedback><text><![CDATA[Incorrect. for-each does not use indices.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>It can only loop backwards</text>
+    <feedback><text><![CDATA[Incorrect. It loops forward only.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>It cannot access elements</text>
+    <feedback><text><![CDATA[Incorrect. It accesses each element in turn.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>Store and ArrayList</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Why does the Store class no longer need to know how many Products will be stored?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>ArrayList grows automatically</text>
+    <feedback><text><![CDATA[Correct. Capacity is handled internally.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The Driver controls the size</text>
+    <feedback><text><![CDATA[Incorrect. Store manages the collection.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Products are stored in fixed positions</text>
+    <feedback><text><![CDATA[Incorrect. That applies to arrays.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The size is hard-coded</text>
+    <feedback><text><![CDATA[Incorrect. No fixed size exists.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>Cheapest Product Algorithm</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What is the correct initial assumption when finding the cheapest product in an ArrayList?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>Assume the first product is the cheapest</text>
+    <feedback><text><![CDATA[Correct. This provides a valid starting comparison.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Assume the last product is the cheapest</text>
+    <feedback><text><![CDATA[Incorrect. There is no guarantee.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Assume all products cost the same</text>
+    <feedback><text><![CDATA[Incorrect. Costs must be compared.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Sort the ArrayList first</text>
+    <feedback><text><![CDATA[Incorrect. Sorting is unnecessary.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>isEmpty vs size</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which condition correctly checks if an ArrayList is empty?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>products.isEmpty()</text>
+    <feedback><text><![CDATA[Correct. isEmpty() directly checks if the list has no elements.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>products.size() &lt; 0</text>
+    <feedback><text><![CDATA[Incorrect. size() is never negative.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>products == null</text>
+    <feedback><text><![CDATA[Incorrect. This checks the reference, not contents.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>products.length == 0</text>
+    <feedback><text><![CDATA[Incorrect. length is for arrays, not ArrayLists.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Replacing total Variable</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which ArrayList feature removes the need for a separate 'total' variable?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>The size() method</text>
+    <feedback><text><![CDATA[Correct. size() tracks the number of stored elements.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The add() method</text>
+    <feedback><text><![CDATA[Incorrect. add() inserts elements only.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The get() method</text>
+    <feedback><text><![CDATA[Incorrect. get() retrieves elements.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The remove() method</text>
+    <feedback><text><![CDATA[Incorrect. remove() deletes elements.]]></text></feedback>
+  </answer>
+</question>
+
+</quiz>
+
