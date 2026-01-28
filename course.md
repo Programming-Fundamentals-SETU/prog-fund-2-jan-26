@@ -1,3 +1,8 @@
+---
+icon:
+  type: streamline-ultimate:java
+  color: red
+---
 # Programming Fundamentals 2
 
 This module follows on from your semester 1 module, Programming Fundamentals 1.

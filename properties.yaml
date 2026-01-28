@@ -1,6 +1,7 @@
 highlightstyle : railscasts
 icon:
   type: devicon:java-wordmark
+  
 courseurl      : https://tutors.dev/course/prog-fund-2-jan-26
 credits        : Siobhan Roche, Mairead Meagher, SETU
 moodle        : https://moodle.setu.ie/course/section.php?id=7400595
