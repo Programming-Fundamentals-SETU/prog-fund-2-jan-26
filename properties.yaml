@@ -16,7 +16,7 @@ ignore         :
 # - topic01-IntelliJ-JVM-and-IO
 # - topic02-primitive-arrays
 - topic03-arraylists-ONHOLD
-- topic03-arraylists
+# - topic03-arraylists
 - topic04-menu-and-crud
 - topic05-persistence-xml-exceptions
 - topic06-TDD-and-JUnit
