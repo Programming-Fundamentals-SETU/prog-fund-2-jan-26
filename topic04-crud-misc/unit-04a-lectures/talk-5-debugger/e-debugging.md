@@ -1,7 +1,7 @@
 ---
 icon: 
-type : qlementine-icons:debug-16
-color: chocolate
+  type : codicon:debug-alt
+  color: chocolate
 ---
 # 04:  Debugging
 Bug · Debugging · IntelliJ Debugger 
