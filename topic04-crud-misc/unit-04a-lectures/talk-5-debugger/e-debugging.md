@@ -1,6 +1,6 @@
 ---
 icon: 
-type : carbon:debug
+type : qlementine-icons:debug-16
 color: chocolate
 ---
 # 04:  Debugging
