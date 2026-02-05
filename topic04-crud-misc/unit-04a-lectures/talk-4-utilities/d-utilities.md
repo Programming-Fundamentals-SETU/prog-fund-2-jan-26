@@ -1,6 +1,6 @@
 ---
 icon:
-    type: catppuccin:folder-utils-open
+    type: arcticons:folder-utility
     color : chocolate
 ---
 # 04: Utilities
