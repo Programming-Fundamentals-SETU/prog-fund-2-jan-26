@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- Q1 -->
+<question type="multichoice">
+  <name><text>What is an Exception</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What best describes an Exception in Java?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>An object that signals an unusual condition during program execution</text>
+    <feedback><text><![CDATA[Correct. Exceptions are objects used to signal runtime problems.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>A syntax error detected by the compiler</text>
+    <feedback><text><![CDATA[Incorrect. Syntax errors are caught at compile time.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>A logic error that produces the wrong output</text>
+    <feedback><text><![CDATA[Incorrect. Logic errors do not throw exceptions.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>A method used for debugging</text>
+    <feedback><text><![CDATA[Incorrect. Exceptions are not debugging tools.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q2 -->
+<question type="multichoice">
+  <name><text>InputMismatchException Cause</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Why did the program crash with an InputMismatchException in the Shop app?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>The user entered a String when an int was expected</text>
+    <feedback><text><![CDATA[Correct. Scanner.nextInt() cannot read a String.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The file could not be found</text>
+    <feedback><text><![CDATA[Incorrect. That would cause a file-related exception.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The ArrayList was empty</text>
+    <feedback><text><![CDATA[Incorrect. An empty list does not cause this exception.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The Scanner object was null</text>
+    <feedback><text><![CDATA[Incorrect. That would cause a NullPointerException.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q3 -->
+<question type="multichoice">
+  <name><text>RuntimeException</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which statement about RuntimeExceptions is true?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>They occur at runtime and can often be avoided with good programming practices</text>
+    <feedback><text><![CDATA[Correct. RuntimeExceptions are not checked by the compiler.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>They must be caught or declared</text>
+    <feedback><text><![CDATA[Incorrect. That applies to checked exceptions.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>They are syntax errors</text>
+    <feedback><text><![CDATA[Incorrect. Syntax errors stop compilation.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>They only occur when reading files</text>
+    <feedback><text><![CDATA[Incorrect. RuntimeExceptions can occur anywhere.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q4 -->
+<question type="multichoice">
+  <name><text>try-catch Purpose</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What is the main purpose of a try-catch block?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>To handle exceptions and allow the program to continue</text>
+    <feedback><text><![CDATA[Correct. try-catch prevents program crashes.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>To prevent errors from occurring</text>
+    <feedback><text><![CDATA[Incorrect. It handles errors after they occur.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>To speed up program execution</text>
+    <feedback><text><![CDATA[Incorrect. try-catch does not improve performance.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>To replace if-statements</text>
+    <feedback><text><![CDATA[Incorrect. try-catch is not a conditional replacement.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q5 -->
+<question type="multichoice">
+  <name><text>ScannerInput Class</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Why was the ScannerInput class introduced?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>To handle invalid user input using try-catch and prevent crashes</text>
+    <feedback><text><![CDATA[Correct. It validates input and recovers from errors.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>To replace ArrayLists</text>
+    <feedback><text><![CDATA[Incorrect. It has nothing to do with collections.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>To store objects in XML</text>
+    <feedback><text><![CDATA[Incorrect. That is done using XStream.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>To improve program performance</text>
+    <feedback><text><![CDATA[Incorrect. Its purpose is robustness, not speed.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q6 -->
+<question type="multichoice">
+  <name><text>Persistence Meaning</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What does persistence mean in programming?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>Data continues to exist beyond the life of the program</text>
+    <feedback><text><![CDATA[Correct. Persistent data survives program shutdown.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Data stored temporarily in memory</text>
+    <feedback><text><![CDATA[Incorrect. That is volatile storage.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Data stored in variables only</text>
+    <feedback><text><![CDATA[Incorrect. Variables are volatile.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Data displayed on a web page</text>
+    <feedback><text><![CDATA[Incorrect. Display is unrelated to persistence.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q7 -->
+<question type="multichoice">
+  <name><text>XML vs HTML</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What is the main purpose of XML compared to HTML?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>XML describes and stores data, HTML displays data</text>
+    <feedback><text><![CDATA[Correct. XML focuses on meaning, not presentation.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>XML replaces HTML</text>
+    <feedback><text><![CDATA[Incorrect. XML is not a replacement for HTML.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>XML is used for styling web pages</text>
+    <feedback><text><![CDATA[Incorrect. CSS handles styling.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>HTML is used to store Java objects</text>
+    <feedback><text><![CDATA[Incorrect. Objects are not stored in HTML.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q8 -->
+<question type="multichoice">
+  <name><text>Serialization Definition</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What is object serialization?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>Converting objects into a stream of bytes for storage</text>
+    <feedback><text><![CDATA[Correct. This allows objects to be saved to files.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Displaying objects on screen</text>
+    <feedback><text><![CDATA[Incorrect. Serialization is about storage.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Sorting objects in an ArrayList</text>
+    <feedback><text><![CDATA[Incorrect. Sorting is unrelated.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Validating user input</text>
+    <feedback><text><![CDATA[Incorrect. Input validation uses Scanner and try-catch.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q9 -->
+<question type="multichoice">
+  <name><text>XStream Purpose</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What is XStream used for in the Shop application?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>Saving and loading Java objects to and from XML</text>
+    <feedback><text><![CDATA[Correct. XStream handles XML serialization.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Handling user input</text>
+    <feedback><text><![CDATA[Incorrect. ScannerInput handles input.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Displaying XML in a browser</text>
+    <feedback><text><![CDATA[Incorrect. XStream does not display XML.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Replacing ArrayLists</text>
+    <feedback><text><![CDATA[Incorrect. XStream works with collections.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q10 -->
+<question type="multichoice">
+  <name><text>save Method Steps</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Which action occurs when calling the save() method?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>Objects are written to an XML file on the hard disk</text>
+    <feedback><text><![CDATA[Correct. save() serializes objects to XML.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Objects are displayed on screen</text>
+    <feedback><text><![CDATA[Incorrect. save() does not display data.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>Objects are deleted from memory</text>
+    <feedback><text><![CDATA[Incorrect. Objects remain in memory.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The program terminates</text>
+    <feedback><text><![CDATA[Incorrect. save() does not exit the program.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q11 -->
+<question type="multichoice">
+  <name><text>Handling save/load Exceptions</text></name>
+  <questiontext format="html">
+    <text><![CDATA[Why are save() and load() calls placed inside try-catch blocks?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>They can throw Exceptions that must be handled</text>
+    <feedback><text><![CDATA[Correct. File and serialization errors may occur.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>They are slow operations</text>
+    <feedback><text><![CDATA[Incorrect. Speed is not the issue.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>They use ArrayLists</text>
+    <feedback><text><![CDATA[Incorrect. ArrayLists do not require try-catch.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>They modify the menu</text>
+    <feedback><text><![CDATA[Incorrect. The menu calls these methods.]]></text></feedback>
+  </answer>
+</question>
+
+<!-- Q12 -->
+<question type="multichoice">
+  <name><text>Volatile Storage</text></name>
+  <questiontext format="html">
+    <text><![CDATA[What happens to program data stored only in memory when the program closes?]]></text>
+  </questiontext>
+  <answer fraction="100">
+    <text>The data is lost because memory is volatile</text>
+    <feedback><text><![CDATA[Correct. RAM does not persist after shutdown.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The data is saved automatically</text>
+    <feedback><text><![CDATA[Incorrect. Data must be explicitly saved.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The data is converted to XML</text>
+    <feedback><text><![CDATA[Incorrect. Serialization must be coded.]]></text></feedback>
+  </answer>
+  <answer fraction="0">
+    <text>The data is cached permanently</text>
+    <feedback><text><![CDATA[Incorrect. Memory is not permanent storage.]]></text></feedback>
+  </answer>
+</question>
+
+</quiz>
