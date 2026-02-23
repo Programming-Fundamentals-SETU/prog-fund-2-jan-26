@@ -17,7 +17,7 @@ ignore         :
 # - topic02-primitive-arrays
 # - topic03-arraylists
 #- topic04-crud-misc 
-- topic05-persistence-xml-exceptions
+#- topic05-persistence-xml-exceptions
 - topic06-TDD-and-JUnit
 - topic07-collections-map-set
 - topic08-inheritance
