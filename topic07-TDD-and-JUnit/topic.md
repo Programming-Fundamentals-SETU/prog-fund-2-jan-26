@@ -1,3 +1,3 @@
-# 06: TDD and JUnit
+# 07: TDD and JUnit
 
 Test Driven Development (TDD) · JUnit · Test Classes · Annotations · Automating Tests

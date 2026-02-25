@@ -1,6 +1,6 @@
 ---
     icon: 
-      type: streamline-flex:customer-support-7
+      type: fad:random-1dice
       color: RoyalBlue
 ---
 Tech Support System V2
