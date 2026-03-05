@@ -1,0 +1,28 @@
+<object-stream>
+  <list>
+    <models.Product>
+      <productName>Iphone 15</productName>
+      <productCode>1015</productCode>
+      <unitCost>890.0</unitCost>
+      <inCurrentProductLine>true</inCurrentProductLine>
+      <productDescriptions>
+        <entry>
+          <string>ENGLISH</string>
+          <string>Upgrade in AI compatibility</string>
+        </entry>
+      </productDescriptions>
+    </models.Product>
+    <models.Product>
+      <productName>Android13</productName>
+      <productCode>1013</productCode>
+      <unitCost>500.0</unitCost>
+      <inCurrentProductLine>true</inCurrentProductLine>
+      <productDescriptions>
+        <entry>
+          <string>FRENCH</string>
+          <string>Il est beau.</string>
+        </entry>
+      </productDescriptions>
+    </models.Product>
+  </list>
+</object-stream>

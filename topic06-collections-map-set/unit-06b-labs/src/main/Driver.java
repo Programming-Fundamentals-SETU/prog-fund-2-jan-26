@@ -65,7 +65,10 @@ public class Driver{
                 case 2 -> printProducts();
                 case 3 -> updateProduct();
                 case 4 -> deleteProduct();
-
+                case 5 -> addDescriptionToProduct();
+                case 6 -> listProductDescriptions();
+                case 7 -> updateDescriptionInProduct();
+                case 8 -> deleteDescriptionFromProduct();
                 case 10 -> printCurrentProducts();
                 case 11 -> printAverageProductPrice();
                 case 12 -> printCheapestProduct();
@@ -163,6 +166,65 @@ public class Driver{
         }
     }
 
+    //------------------------------------
+    //PRODUCT DESCRIPTION MENU
+    //------------------------------------
+    private void addDescriptionToProduct() {
+        Product product = askUserToSelectProduct();
+        if (product != null){
+            String language = readValidLanguage();
+            String description = ScannerInput.readNextLine("\t Description: ");
+            if (product.addDescription(language, description))
+                System.out.println("Add Successful!");
+            else
+                System.out.println("Add NOT Successful");
+        }
+    }
+
+    private void listProductDescriptions(){
+        Product product = askUserToSelectProduct();
+        if (product != null) {
+            System.out.println(product.listDescriptions());
+        }
+    }
+
+    private void updateDescriptionInProduct() {
+        Product product = askUserToSelectProduct();
+        if (product != null) {
+            System.out.println(product.listDescriptions());
+            if (product.numberOfDescriptions() > 0) {
+                //ask user to enter a language.
+                String language = readValidLanguage();
+                if (product.isAlreadyAddedLanguage(language)) {
+                    //if language has been added -> ask for new desc and update it.
+                    String newDesc = ScannerInput.readNextLine("Enter a new description: ");
+                    if (product.updateDescription(language, newDesc)) {
+                        System.out.println("Description updated");
+                    } else {
+                        System.out.println("Description NOT updated");
+                    }
+                } else {
+                    // if language hasn't been added -> update not successful
+                    System.out.println("No descriptions for this language");
+                }
+            }
+        }
+    }
+
+    private void deleteDescriptionFromProduct() {
+        Product product = askUserToSelectProduct();
+        if (product != null) {
+            System.out.println(product.listDescriptions());
+            if (product.numberOfDescriptions() > 0) {
+                String language = readValidLanguage();
+                if (product.deleteDescription(language) != null) {
+                    System.out.println("Description deleted");
+                } else {
+                    System.out.println("Description not found");
+                }
+            }
+        }
+    }
 
     //------------------------------------
     //DISPLAYING / REPORTING
@@ -239,6 +301,17 @@ public class Driver{
             }
         }
         return null;
+    }
+
+    private String readValidLanguage() {
+        do {
+            String language = ScannerInput.readNextLine("Enter the language " + LanguageUtility.getLanguages() + ": ");
+            if (LanguageUtility.isValidLanguage(language)) {
+                return language.toUpperCase();  //return as an uppercase so that it makes hashmap processing easier
+            } else {
+                System.err.println("\tLanguage not valid.");
+            }
+        } while (true);
     }
 
 }
