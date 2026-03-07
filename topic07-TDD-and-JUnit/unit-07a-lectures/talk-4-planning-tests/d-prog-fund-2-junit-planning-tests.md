@@ -1,4 +1,7 @@
-Planning Testing
-
-4 Phase Test,More complex JUnit test 
-Saving to and loading to XML files.
+---
+icon: 
+    type: arcticons:floor-plan-creator
+    color: yellow
+---
+# 07: Planning Testing
+JUnit · 4 Phase Test · Saving to and loading to XML files
