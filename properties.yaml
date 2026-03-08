@@ -18,8 +18,8 @@ ignore         :
 # - topic03-arraylists
 #- topic04-crud-misc 
 #- topic05-persistence-xml-exceptions
-- topic07-TDD-and-JUnit
 #- topic06-collections-map-set
+#- topic07-TDD-and-JUnit
 - topic08-inheritance
 - topic09-polymorphism-abstraction
 - topic10-interfaces
