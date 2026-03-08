@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- Category -->
+<question type="category">
+  <category>
+    <text>$course$/JUnit Quiz</text>
+  </category>
+</question>
+
+
+<!-- Question 1 -->
+<question type="multichoice">
+<name>
+<text>Unit Testing Purpose</text>
+</name>
+
+<questiontext format="html">
+<text><![CDATA[
+What is the main purpose of <b>unit testing</b>?
+]]></text>
+</questiontext>
+
+<generalfeedback>
+<text><![CDATA[
+Unit testing focuses on testing individual pieces of code such as methods or classes.
+]]></text>
+</generalfeedback>
+
+<single>true</single>
+<shuffleanswers>true</shuffleanswers>
+<answernumbering>abc</answernumbering>
+
+<answer fraction="0">
+<text><![CDATA[Testing the whole system with real users]]></text>
+<feedback>
+<text><![CDATA[
+This describes system or acceptance testing rather than unit testing.
+]]></text>
+</feedback>
+</answer>
+
+<answer fraction="100">
+<text><![CDATA[Testing individual pieces of code such as methods or classes]]></text>
+<feedback>
+<text><![CDATA[
+Correct. Unit testing verifies small pieces of functionality.
+]]></text>
+</feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[Testing network performance]]></text>
+<feedback>
+<text><![CDATA[
+Network performance testing is part of performance or load testing.
+]]></text>
+</feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[Testing the user interface only]]></text>
+<feedback>
+<text><![CDATA[
+User interface testing is normally part of system or integration testing.
+]]></text>
+</feedback>
+</answer>
+
+</question>
+
+
+<!-- Question 2 -->
+<question type="multichoice">
+<name>
+<text>TDD Order</text>
+</name>
+
+<questiontext format="html">
+<text><![CDATA[
+In <b>Test-Driven Development (TDD)</b>, what is the correct order of steps?
+]]></text>
+</questiontext>
+
+<generalfeedback>
+<text><![CDATA[
+TDD follows a cycle of writing a failing test, writing code to pass the test, and then refactoring.
+]]></text>
+</generalfeedback>
+
+<single>true</single>
+<shuffleanswers>true</shuffleanswers>
+<answernumbering>abc</answernumbering>
+
+<answer fraction="0">
+<text><![CDATA[Write code → Write tests → Refactor]]></text>
+<feedback>
+<text><![CDATA[
+In TDD the test is written before the code.
+]]></text>
+</feedback>
+</answer>
+
+<answer fraction="100">
+<text><![CDATA[Write tests → Write code → Refactor]]></text>
+<feedback>
+<text><![CDATA[
+Correct. Tests drive the implementation.
+]]></text>
+</feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[Refactor → Write tests → Write code]]></text>
+<feedback>
+<text><![CDATA[
+Refactoring happens after the code passes the tests.
+]]></text>
+</feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[Write code → Refactor → Write tests]]></text>
+<feedback>
+<text><![CDATA[
+Tests should be written before implementation in TDD.
+]]></text>
+</feedback>
+</answer>
+
+</question>
+
+
+<!-- Question 3 -->
+<question type="multichoice">
+<name>
+<text>JUnit Test Annotation</text>
+</name>
+
+<questiontext format="html">
+<text><![CDATA[
+Which annotation marks a method as a <b>JUnit test method</b>?
+]]></text>
+</questiontext>
+
+<generalfeedback>
+<text><![CDATA[
+JUnit uses annotations to mark test methods and configure test behaviour.
+]]></text>
+</generalfeedback>
+
+<single>true</single>
+<shuffleanswers>true</shuffleanswers>
+<answernumbering>abc</answernumbering>
+
+<answer fraction="0">
+<text><![CDATA[@Check]]></text>
+<feedback><text><![CDATA[This is not a JUnit annotation.]]></text></feedback>
+</answer>
+
+<answer fraction="100">
+<text><![CDATA[@Test]]></text>
+<feedback><text><![CDATA[Correct. @Test marks a method that JUnit should run as a test.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[@Run]]></text>
+<feedback><text><![CDATA[This is not used to mark JUnit tests.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[@Verify]]></text>
+<feedback><text><![CDATA[This is not a JUnit annotation.]]></text></feedback>
+</answer>
+
+</question>
+
+
+<!-- Question 4 -->
+<question type="multichoice">
+<name>
+<text>JUnit Assertion</text>
+</name>
+
+<questiontext format="html">
+<text><![CDATA[
+Which JUnit method checks that two values are equal?
+]]></text>
+</questiontext>
+
+<generalfeedback>
+<text><![CDATA[
+JUnit assertions verify that expected results match actual results.
+]]></text>
+</generalfeedback>
+
+<single>true</single>
+<shuffleanswers>true</shuffleanswers>
+<answernumbering>abc</answernumbering>
+
+<answer fraction="0">
+<text><![CDATA[checkEquals()]]></text>
+<feedback><text><![CDATA[This is not a JUnit assertion method.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[compareEquals()]]></text>
+<feedback><text><![CDATA[This method does not exist in JUnit.]]></text></feedback>
+</answer>
+
+<answer fraction="100">
+<text><![CDATA[assertEquals()]]></text>
+<feedback><text><![CDATA[Correct. assertEquals(expected, actual) checks equality.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[verifyEquals()]]></text>
+<feedback><text><![CDATA[This is not a JUnit method.]]></text></feedback>
+</answer>
+
+</question>
+
+
+<!-- Question 5 -->
+<question type="multichoice">
+<name>
+<text>Test Fixture Purpose</text>
+</name>
+
+<questiontext format="html">
+<text><![CDATA[
+What is the purpose of a <b>test fixture</b>?
+]]></text>
+</questiontext>
+
+<generalfeedback>
+<text><![CDATA[
+A test fixture prepares the environment and objects needed for testing.
+]]></text>
+</generalfeedback>
+
+<single>true</single>
+<shuffleanswers>true</shuffleanswers>
+<answernumbering>abc</answernumbering>
+
+<answer fraction="0">
+<text><![CDATA[To store user input]]></text>
+<feedback><text><![CDATA[Fixtures prepare the environment for tests rather than storing user input.]]></text></feedback>
+</answer>
+
+<answer fraction="100">
+<text><![CDATA[To provide a fixed set of objects used by tests]]></text>
+<feedback><text><![CDATA[Correct. Fixtures create objects that tests use.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[To generate random test data]]></text>
+<feedback><text><![CDATA[Fixtures normally contain predefined objects rather than random data.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[To run the program faster]]></text>
+<feedback><text><![CDATA[Fixtures organise test setup but do not improve performance.]]></text></feedback>
+</answer>
+
+</question>
+
+
+<!-- Question 6 -->
+<question type="multichoice">
+<name>
+<text>@BeforeEach Annotation</text>
+</name>
+
+<questiontext format="html">
+<text><![CDATA[
+Which annotation prepares objects before <b>each test</b> runs?
+]]></text>
+</questiontext>
+
+<generalfeedback>
+<text><![CDATA[
+@BeforeEach runs before every test method and is typically used to initialise fixtures.
+]]></text>
+</generalfeedback>
+
+<single>true</single>
+<shuffleanswers>true</shuffleanswers>
+<answernumbering>abc</answernumbering>
+
+<answer fraction="100">
+<text><![CDATA[@BeforeEach]]></text>
+<feedback><text><![CDATA[Correct. It runs before each test method.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[@BeforeTest]]></text>
+<feedback><text><![CDATA[This is not a standard JUnit 5 annotation.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[@StartTest]]></text>
+<feedback><text><![CDATA[This annotation does not exist in JUnit.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[@Init]]></text>
+<feedback><text><![CDATA[JUnit does not use this annotation.]]></text></feedback>
+</answer>
+
+</question>
+
+
+<!-- Question 7 -->
+<question type="multichoice">
+<name>
+<text>Test Independence</text>
+</name>
+
+<questiontext format="html">
+<text><![CDATA[
+Why should unit tests be <b>independent</b>?
+]]></text>
+</questiontext>
+
+<generalfeedback>
+<text><![CDATA[
+Independent tests ensure consistent results regardless of execution order.
+]]></text>
+</generalfeedback>
+
+<single>true</single>
+<shuffleanswers>true</shuffleanswers>
+<answernumbering>abc</answernumbering>
+
+<answer fraction="0">
+<text><![CDATA[To make the program faster]]></text>
+<feedback><text><![CDATA[Test independence does not affect execution speed.]]></text></feedback>
+</answer>
+
+<answer fraction="100">
+<text><![CDATA[To allow tests to run in any order]]></text>
+<feedback><text><![CDATA[Correct. Tests should not depend on each other.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[To reduce the number of tests needed]]></text>
+<feedback><text><![CDATA[Independence does not reduce the number of tests.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[To avoid writing assertions]]></text>
+<feedback><text><![CDATA[Assertions are still needed to verify results.]]></text></feedback>
+</answer>
+
+</question>
+
+
+<!-- Question 8 -->
+<question type="multichoice">
+<name>
+<text>Test Structure</text>
+</name>
+
+<questiontext format="html">
+<text><![CDATA[
+Which of the following is <b>NOT</b> part of the common test structure?
+]]></text>
+</questiontext>
+
+<generalfeedback>
+<text><![CDATA[
+Typical test structure is Setup → Execute → Assert.
+]]></text>
+</generalfeedback>
+
+<single>true</single>
+<shuffleanswers>true</shuffleanswers>
+<answernumbering>abc</answernumbering>
+
+<answer fraction="0">
+<text><![CDATA[Setup]]></text>
+<feedback><text><![CDATA[Setup prepares the test environment.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[Execute]]></text>
+<feedback><text><![CDATA[Execute runs the code under test.]]></text></feedback>
+</answer>
+
+<answer fraction="100">
+<text><![CDATA[Analyse]]></text>
+<feedback><text><![CDATA[Correct. Analyse is not normally a defined test phase.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[Assert]]></text>
+<feedback><text><![CDATA[Assert verifies the expected result.]]></text></feedback>
+</answer>
+
+</question>
+
+
+<!-- Question 9 -->
+<question type="multichoice">
+<name>
+<text>Boundary Testing</text>
+</name>
+
+<questiontext format="html">
+<text><![CDATA[
+Why should tests include <b>boundary values</b>?
+]]></text>
+</questiontext>
+
+<generalfeedback>
+<text><![CDATA[
+Many programming errors occur at the edges of valid input ranges.
+]]></text>
+</generalfeedback>
+
+<single>true</single>
+<shuffleanswers>true</shuffleanswers>
+<answernumbering>abc</answernumbering>
+
+<answer fraction="0">
+<text><![CDATA[They make the program easier to read]]></text>
+<feedback><text><![CDATA[Boundary testing is about detecting errors, not readability.]]></text></feedback>
+</answer>
+
+<answer fraction="100">
+<text><![CDATA[Errors often occur at the edges of input ranges]]></text>
+<feedback><text><![CDATA[Correct. Boundaries are common sources of bugs.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[They reduce the number of tests needed]]></text>
+<feedback><text><![CDATA[Boundary testing may actually increase the number of tests.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[They make compilation faster]]></text>
+<feedback><text><![CDATA[Testing strategy does not affect compilation speed.]]></text></feedback>
+</answer>
+
+</question>
+
+
+<!-- Question 10 -->
+<question type="multichoice">
+<name>
+<text>Automated Testing Benefit</text>
+</name>
+
+<questiontext format="html">
+<text><![CDATA[
+What is the main benefit of <b>automated tests using JUnit</b>?
+]]></text>
+</questiontext>
+
+<generalfeedback>
+<text><![CDATA[
+Automated tests allow developers to run tests frequently during development.
+]]></text>
+</generalfeedback>
+
+<single>true</single>
+<shuffleanswers>true</shuffleanswers>
+<answernumbering>abc</answernumbering>
+
+<answer fraction="100">
+<text><![CDATA[Tests run automatically and repeatedly]]></text>
+<feedback><text><![CDATA[Correct. Automated tests help detect regressions quickly.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[Tests replace debugging]]></text>
+<feedback><text><![CDATA[Testing helps find problems but does not eliminate debugging.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[Tests remove all software bugs]]></text>
+<feedback><text><![CDATA[Testing improves quality but cannot guarantee zero bugs.]]></text></feedback>
+</answer>
+
+<answer fraction="0">
+<text><![CDATA[Tests only run once]]></text>
+<feedback><text><![CDATA[Automated tests are designed to run repeatedly.]]></text></feedback>
+</answer>
+
+</question>
+
+</quiz>
