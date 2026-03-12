@@ -1,3 +1,0 @@
-# Inheritance
-
-Inheritance · Introduction

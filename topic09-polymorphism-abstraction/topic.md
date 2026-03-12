@@ -1,4 +1,4 @@
-# 9: Polymorphism & Abstraction
+# 09: Polymorphism & Abstraction
 
 Polymorphic Behaviour · Abstraction · Social Network app · Inheritance Hierarchy
 

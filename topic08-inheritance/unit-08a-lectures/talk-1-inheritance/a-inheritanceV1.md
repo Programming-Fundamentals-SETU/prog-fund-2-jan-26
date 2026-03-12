@@ -3,5 +3,6 @@ icon:
     type: streamline-freehand:human-resources-hierarchy
     color : green
 ---
-# 08: Inheritance
-Inheritance · *is-a* relationship · subtyping · substitution
+# 8: Inheritance - Intro 
+
+Inheritance · Introduction

@@ -4,6 +4,6 @@ icon:
   color: red
 ---
 
-# 1: IntelliJ and Basic I/O
+# 01: IntelliJ and Basic I/O
 
 IntelliJ · Java Virtual Machine (JVM) · main method · Scanner · OO recap

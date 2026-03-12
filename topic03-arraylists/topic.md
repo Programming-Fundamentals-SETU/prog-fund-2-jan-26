@@ -3,7 +3,7 @@ icon:
   type: codicon:combine
   color: sienna
 ---
-# 2: Introducing ArrayLists
+# 02: Introducing ArrayLists
 
 primitive arrays · arraylist
 

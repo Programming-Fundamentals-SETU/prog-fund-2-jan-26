@@ -3,7 +3,7 @@ icon:
   type: carbon:array-booleans
   color: purple
 ---
-# 2: Arrays 
+# 02: Arrays 
 
 primitive arrays 
 
