@@ -3,6 +3,5 @@ icon:
     type: streamline-freehand:human-resources-hierarchy
     color : green
 ---
-# 8: Inheritance - Intro 
-
+# 08: Inheritance - Intro 
 Inheritance · Introduction
