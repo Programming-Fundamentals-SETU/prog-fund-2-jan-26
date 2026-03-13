@@ -1,1 +1,1 @@
-Lectures Option 2
+Lectures
