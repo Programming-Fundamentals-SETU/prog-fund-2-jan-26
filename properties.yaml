@@ -20,7 +20,7 @@ ignore         :
 #- topic05-persistence-xml-exceptions
 #- topic06-collections-map-set
 #- topic07-TDD-and-JUnit
-- topic08-inheritance
+#- topic08-inheritance
 - topic09-polymorphism-abstraction
 - topic10-interfaces
 - topic11-search-and-sort
