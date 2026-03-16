@@ -1,3 +1,8 @@
+---
+icon: 
+    type: bi:postcard
+    color : red
+---
 # Abstraction
 
-Abstract Classes and methods (Video 17m)
+Abstract Classes and methods 
