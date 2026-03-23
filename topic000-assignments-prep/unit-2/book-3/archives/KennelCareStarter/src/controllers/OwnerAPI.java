@@ -1,8 +1,7 @@
 package controllers;
 
 
-import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.xml.DomDriver;
+
 import models.Owner;
 import utils.ISerializer;
 
@@ -70,8 +69,8 @@ public class OwnerAPI implements ISerializer {
         String listOwners = "";
         for (Owner ow : ownerList){
             if (ow.getName().startsWith(prefix)){
-                listOwners += ownerList.indexOf(ow) + ": " + ow + "\n";
-            }}
+            listOwners += ownerList.indexOf(ow) + ": " + ow + "\n";
+        }}
 
         if (listOwners.equals("")){
             return "No Owners Found";
@@ -80,6 +79,7 @@ public class OwnerAPI implements ISerializer {
             return listOwners;
         }
     }
+
 
     //---------------------
     // Update methods
@@ -151,10 +151,20 @@ public class OwnerAPI implements ISerializer {
     //---------------------
 
     @Override
+    public void save() throws Exception {
+
+    }
+
+    @Override
+    public void load() throws Exception {
+
+    }
+
+    @Override
     public String fileName() {
         return String.valueOf(file);
     }
-
+/*
     public void save() throws Exception {
         var xstream = new XStream(new DomDriver());
         ObjectOutputStream os = xstream.createObjectOutputStream(new FileWriter(file));
@@ -177,7 +187,7 @@ public class OwnerAPI implements ISerializer {
         ownerList = (List<Owner>) in.readObject();
         in.close();
     }
-
+*/
 
 
 }

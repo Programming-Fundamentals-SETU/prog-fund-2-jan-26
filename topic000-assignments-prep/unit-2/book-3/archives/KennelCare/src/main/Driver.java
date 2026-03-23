@@ -11,9 +11,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Driver {
-    Scanner scanner = new Scanner(System.in);
-    DayCareAPI daycare = new DayCareAPI("LeBarks", 50,new File("animals.xml") );
-    OwnerAPI ownerAPI= new OwnerAPI(new File("animals.xml"));
+    private Scanner scanner = new Scanner(System.in);
+    private DayCareAPI daycare = new DayCareAPI("LeBarks", 50,new File("animals.xml") );
+    private OwnerAPI ownerAPI= new OwnerAPI(new File("animals.xml"));
     public static void main(String[] args) {
 
         new Driver();
@@ -88,21 +88,71 @@ public class Driver {
             switch (option) {
                 case 1 -> addOwner();
                 case 2 -> deleteOwner();
-                case 3 -> System.out.println(daycare.listOwners());
+                case 3 -> System.out.println(ownerAPI.listOwners());
                 case 4 -> System.out.println("todo");
                 default -> System.out.println("Invalid option entered" + option);
             }
             ScannerInput.readNextLine("\n Press the enter key to continue");
-            option = petsAPIMenu();
+            option = ownersAPIMenu();
         }
     }
 
-    private void deleteOwner() {
+    private void runOwnerReportsMenu() {
+        int option = ownersReportsMenu();
+        while (option != 0) {
+            switch (option) {
+                case 1 -> System.out.println(ownerAPI.listOwners());
+                case 2 -> System.out.println(findOwners());
 
+                default -> System.out.println("Invalid option entered" + option);
+            }
+            ScannerInput.readNextLine("\n Press the enter key to continue");
+            option = ownersReportsMenu();
+        }
+    }
+
+    private String findOwners() {
+        return ownerAPI.listOwnersStartsWith(ScannerInput.readNextLine("Enter start of owner name:"));
+    }
+
+    private int ownersReportsMenu() {
+        System.out.println(""" 
+                 ---------- Owners Reports Menu  ---------------------
+                | 1) List all Owners                                  | 
+                | 2) List all Owners that starts with                                  |
+                
+
+                | 0) Return to main menu                            | 
+                  ----------------------------------------------------  """);
+        return ScannerInput.readNextInt("==>>");
+    }
+
+
+
+
+
+    private void deleteOwner() {
+        System.out.println(ownerAPI.listOwners());
+        int index = ScannerInput.readNextInt("\n Press enter index to delete");
+        Owner ow = ownerAPI.getOwnerByIndex(index);
+        boolean result = ownerAPI.removeOwner(ow);
+        if (result) {
+            System.out.println("Sucessful removal \n" + ownerAPI.listOwners());
+        }
     }
 
     private void addOwner() {
+        int id = ScannerInput.readNextInt("\n Press enter id  to add owner");
+        String name = ScannerInput.readNextLine("Enter owner name");
+        String phone = ScannerInput.readNextLine("Enter phone number");
+
+        Owner owner = new Owner(id, name, phone);
+        boolean res = ownerAPI.addOwner(owner);
+        if(res)
+            System.out.println("Sucessfully added owner \n" + owner);
+
     }
+
 //---------------------
     //  App Store Menu
     //---------------------
@@ -137,7 +187,7 @@ public class Driver {
                 case 1 -> addPet();
                 case 2 -> deletePet();
                 case 3 -> System.out.println(daycare.listAllPets());
-                case 4 -> System.out.println("todo");
+                case 4 -> updateOwner();
                 default -> System.out.println("Invalid option entered" + option);
             }
             ScannerInput.readNextLine("\n Press the enter key to continue");
@@ -196,8 +246,7 @@ public class Driver {
         }
     }
 
-    private void runOwnerReportsMenu() {
-    }
+
 
     private void runPetReportsMenu() {
       int option = petsReportsMenu();
@@ -277,7 +326,16 @@ public class Driver {
 
     private void dogMenu() {
     }
+    private void updateOwner() {
+        System.out.println(ownerAPI.listOwners());
+        int index = ScannerInput.readNextInt("\n Press enter index to delete");
+        Owner ow = ownerAPI.getOwnerByIndex(index);
+        System.out.println("Current owner: " + ow);
+        String name = ScannerInput.readNextLine("Enter updated name: ");
+        String tele = ScannerInput.readNextLine("Enter updated telephone: ");
+        ownerAPI.updateOwner(index, name, tele);
 
+    }
 
     //------------------------------------
     // Private methods for CRUD on Song

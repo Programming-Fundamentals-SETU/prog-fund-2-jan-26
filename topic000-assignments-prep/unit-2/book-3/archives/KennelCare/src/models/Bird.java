@@ -3,8 +3,8 @@ package models;
 import java.util.Objects;
 
 public abstract class Bird extends Pet{
-    double wingSpan;
-    boolean canFly;
+    private double wingSpan;
+    private boolean canFly;
 
     public Bird(String name, int age, Owner owner, int id, double wingSpan, boolean canFly) {
         super(name, age, owner, id);
