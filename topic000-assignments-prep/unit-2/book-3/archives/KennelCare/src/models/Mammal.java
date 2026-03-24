@@ -1,9 +1,9 @@
 package models;
 
 public abstract class Mammal extends Pet {
-    char sex;
-    boolean vaccinated;
-    double weight;
+    private char sex;
+    private boolean vaccinated;
+    private double weight;
     private boolean neutered; //
 
     public Mammal(String name, int age, Owner owner, int id, char sex, boolean vaccinated, double weight, boolean neutered) {

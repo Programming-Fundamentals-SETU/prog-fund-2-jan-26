@@ -3,7 +3,7 @@ package models;
 import utils.BirdUtility;
 
 public class Parrot extends Bird {
-    String vocabularySize;
+    private String vocabularySize;
 
     public Parrot(String name, int age, Owner owner, int id, double wingSpan, boolean canFly, int vocabularySize) {
         super(name, age, owner, id, wingSpan, canFly);
@@ -16,7 +16,7 @@ public class Parrot extends Bird {
         boolean[] days = getDaysAttending();
         for (int i = 0; i < days.length; i++) {
             if (days[i]) {
-                fee += 10;  // base rate for cat
+                fee += 10;  // base rate for parrot
 
             }
         }
