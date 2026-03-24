@@ -127,7 +127,7 @@ public class OwnerAPI implements ISerializer {
     public int retrieveOwnerIndex(String ownerName){
         for (Owner ow : ownerList){
             if (ow.getName().equalsIgnoreCase(ownerName)){
-                return ownerList.indexOf(ownerName);
+                return ownerList.indexOf(ow);
             }
         }
         return -1;
