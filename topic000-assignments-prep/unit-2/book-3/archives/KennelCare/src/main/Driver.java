@@ -1,19 +1,18 @@
 package main;
 
 
-import controllers.DayCareAPI;
+import controllers.PetsDayCareAPI;
 import controllers.OwnerAPI;
 import models.*;
 import utils.ScannerInput;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Driver {
     private Scanner scanner = new Scanner(System.in);
-    private DayCareAPI daycare = new DayCareAPI("LeBarks", 50,new File("animals.xml") );
-    private OwnerAPI ownerAPI= new OwnerAPI(new File("animals.xml"));
+    private PetsDayCareAPI petsDaycareAPI = new PetsDayCareAPI("LeBarks", 50,new File("pets.xml") );
+    private OwnerAPI ownerAPI= new OwnerAPI(new File("owners.xml"));
     public static void main(String[] args) {
 
         new Driver();
@@ -35,11 +34,11 @@ public class Driver {
         System.out.println("""
                  -------Pet Day Care -------------
                 |  1) Pets CRUD MENU             |
-                |  2) Owners CRUD MENU                              |
+                |  2) Owners CRUD MENU           |
                 |  3) Reports MENU               |
                 |--------------------------------|
                 |  4) Search Pets                |
-                |  5) Search Owners                                |  
+                |  5) Search Owners              |  
                 |  4) Sort Pets                  | 
                 |--------------------------------|
                 |  10) Save all                  |
@@ -65,6 +64,14 @@ public class Driver {
                 case 6 ->findDogMenu();
 
                 case 7 ->calculateWeekly();
+                case 10 -> {
+                    saveOwners();
+                    savePets();
+                }
+                case 11 -> {
+                    loadPets();
+                    loadOwners();
+                }
                 default -> System.out.println("Invalid option entered: " + option);
             }
 
@@ -142,9 +149,9 @@ public class Driver {
     }
 
     private void addOwner() {
-        int id = ScannerInput.readNextInt("\n Press enter id  to add owner");
-        String name = ScannerInput.readNextLine("Enter owner name");
-        String phone = ScannerInput.readNextLine("Enter phone number");
+        int id = ScannerInput.readNextInt("\n Enter id:  ");
+        String name = ScannerInput.readNextLine("Enter owner name: ");
+        String phone = ScannerInput.readNextLine("Enter phone number: ");
 
         Owner owner = new Owner(id, name, phone);
         boolean res = ownerAPI.addOwner(owner);
@@ -186,7 +193,7 @@ public class Driver {
             switch (option) {
                 case 1 -> addPet();
                 case 2 -> deletePet();
-                case 3 -> System.out.println(daycare.listAllPets());
+                case 3 -> System.out.println(petsDaycareAPI.listAllPets());
                 case 4 -> updateOwner();
                 default -> System.out.println("Invalid option entered" + option);
             }
@@ -198,8 +205,8 @@ public class Driver {
     private void deletePet() {
         int id = ScannerInput.readNextInt("Please enter index number to delete: ");
 
-        if (daycare.isValidPetIndex(id)) {
-            Pet t = daycare.removePet(id);
+        if (petsDaycareAPI.isValidPetIndex(id)) {
+            Pet t = petsDaycareAPI.removePet(id);
             if (t != null)
                 System.out.println("Sucessful delete : " + t);
             else System.out.println("No Pet was removed from the list");
@@ -217,8 +224,25 @@ public class Driver {
 
 
         switch (pType) {
-            case 1 -> { //dog
-                //TBD
+            case 1 -> {
+          //       public Dog(String name, int age, Owner owner, int id, char sex, boolean vaccinated, double weight, boolean neutered, String breed, boolean dangerousBreed) {
+
+                    String name = ScannerInput.readNextLine("Please enter dog's name: ");
+                    int age = ScannerInput.readNextInt("Please enter dog's age: ");
+                    String ownerName = ScannerInput.readNextLine("Please enter dog owner's name: ");
+                    Owner owner = ownerAPI.getOwnerByName(ownerName);
+                    int id = ScannerInput.readNextInt("Please enter dog's id: ");
+                    char sex = ScannerInput.readNextChar("Enter the dog's sex ('M' for male, 'F' for female): ");
+                    char vacc = ScannerInput.readNextChar("Is the dog's vaccinated? (y/n): ");
+                    boolean vaccinated = (vacc == 'y'?  true : false);
+                    double weight = ScannerInput.readNextDouble("Please enter dog's weight: ");
+                    char neut = ScannerInput.readNextChar("Is the dog neutered? (y/n): ");
+                    boolean neutered = (neut == 'y'?  true : false);
+                    String breed = ScannerInput.readNextLine("Please enter dog's breed: ");
+                    char dang = ScannerInput.readNextChar("Is the dog's dangerous? (y/n): ");
+                    boolean dangerous = (dang == 'y'?  true : false);
+                    petsDaycareAPI.addPet(new Dog(name, age, owner, id, sex, vaccinated, weight, neutered, breed, dangerous));
+
             }
             case 2 -> {
                         //cat
@@ -252,10 +276,10 @@ public class Driver {
       int option = petsReportsMenu();
         while (option != 0) {
             switch (option) {
-                case 1 -> System.out.println(daycare.listAllPets());
-                case 2 -> System.out.println(daycare.listAllPets());
-                case 3 -> System.out.println(daycare.listAllPets());
-                case 4 -> System.out.println(daycare.listAllDangerousDogs());
+                case 1 -> System.out.println(petsDaycareAPI.listAllPets());
+                case 2 -> System.out.println(petsDaycareAPI.listAllPets());
+                case 3 -> System.out.println(petsDaycareAPI.listAllPets());
+                case 4 -> System.out.println(petsDaycareAPI.listAllDangerousDogs());
                 //case 5 ->
                // case 6 -> /
                // case 7 -> /
@@ -355,6 +379,38 @@ public class Driver {
     //---------------------------------
     //  Private methods for Persistence
     // --------------------------------
+    private void saveOwners() {
+        try {
+            ownerAPI.save();
+        } catch (Exception e) {
+            System.err.println("Error writing to file: " + ownerAPI.fileName());
+        }
+    }
+
+    //load all the products into the store from a file on the hard disk
+    private void loadOwners() {
+        try {
+            ownerAPI.load();
+        } catch (Exception e) {
+            System.err.println("Error reading from file: " + ownerAPI.fileName());
+        }
+    }
+    private void savePets() {
+        try {
+            petsDaycareAPI.save();
+        } catch (Exception e) {
+            System.err.println("Error writing to file: " + petsDaycareAPI.fileName());
+        }
+    }
+
+    //load all the products into the store from a file on the hard disk
+    private void loadPets() {
+        try {
+            petsDaycareAPI.load();
+        } catch (Exception e) {
+            System.err.println("Error reading from file: " + petsDaycareAPI.fileName());
+        }
+    }
 
 
     //TODO Add a method, load().  The return type is void.

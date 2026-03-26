@@ -60,7 +60,7 @@ public class Dog extends Mammal {
     public String toString() {
         return "[Dog]\n" + super.toString() +
                 "\nBreed: " + breed +
-                " | Dangerous: " + dangerousBreed +
+                ", dangerous: " + (dangerousBreed? "Yes":"No") +
                 "\nWeekly Fee: €" + calculateWeeklyFee();
     }
 }

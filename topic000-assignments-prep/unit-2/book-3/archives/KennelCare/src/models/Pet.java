@@ -26,8 +26,6 @@ public abstract class Pet {
         return age;
     }
 
-
-
     public int getId() {
         return id;
     }
@@ -51,11 +49,13 @@ public abstract class Pet {
     }
 
     public void setId(int id) {
-        if (id >= 1000 && id <= 9999)
+        if (id >= 1000 )
             this.id = id;
     }
     public void setAge(int age) {
-        if (age >= 0 && age <= 20) this.age = age;
+
+        if (age >= 0 && age <= 20)
+            this.age = age;
     }
 
     public void checkIn(int dayIndex) {
@@ -63,13 +63,14 @@ public abstract class Pet {
             daysAttending[dayIndex] = true;
         }
     }
+
     public void checkOut(int dayIndex) {
         if (dayIndex >= 0 && dayIndex < 7) {
             daysAttending[dayIndex] = false;
         }
     }
 
-    public int numOfDaysInKennel(){
+    public int numOfDaysAttending(){
         int days = 0;
         for (boolean d:daysAttending)
             if(d) days++;
@@ -91,9 +92,9 @@ public abstract class Pet {
         if (days.equals("")) {
             days = "None";
         }
-        return "Name: " + name + " | Age: " + age  +
-                "\n" + owner.toString() +
-                "\nDays attending: " + days;
+        return "Name: " + name + "  age: " + age  +
+                ", Owner: [" + owner.toString() + "]"+
+                ", days attending: " + days;
     }
 }
 

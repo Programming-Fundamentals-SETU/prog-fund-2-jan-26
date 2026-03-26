@@ -11,7 +11,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 
-public class DayCareAPI  implements ISerializer {
+public class PetsDayCareAPI implements ISerializer {
     private ArrayList<Pet> pets;
     private String name;  // 10 chars
     private int maxNumberOfPets = 10;  // must be >= 10 <= 100 - default to 10
@@ -20,7 +20,7 @@ public class DayCareAPI  implements ISerializer {
     //-------------------------------------
     //  Constructor
     //-------------------------------------
-    public DayCareAPI(String name, int maxNumberOfPets, File file) {
+    public PetsDayCareAPI(String name, int maxNumberOfPets, File file) {
         pets = new ArrayList<>();
         initName(name);
         setMaxNumberOfPets(maxNumberOfPets);
@@ -157,7 +157,7 @@ public class DayCareAPI  implements ISerializer {
         } else {
             String allPetsStr = "";
             for (int i = 0; i < pets.size(); i++)
-                if (pets.get(i).numOfDaysInKennel() > numDays)
+                if (pets.get(i).numOfDaysAttending() > numDays)
                     allPetsStr += i + ":\t" + pets.get(i);
             if (allPetsStr.isEmpty())
                 return "No Pets stay longer than " + numDays + " days at the moment";
@@ -236,7 +236,7 @@ public class DayCareAPI  implements ISerializer {
     public double getAverageNumDaysPerWeek() {
         int averageNumDays = 0;
         for (Pet thePet : pets) {
-            averageNumDays += thePet.numOfDaysInKennel();
+            averageNumDays += thePet.numOfDaysAttending();
         }
         return (double)averageNumDays / numberOfPets();
     }
@@ -284,7 +284,7 @@ public class DayCareAPI  implements ISerializer {
     @SuppressWarnings("unchecked")
     public void load() throws Exception {
         //list of classes that you wish to include in the serialisation, separated by a comma
-        Class<?>[] classes = new Class[] { Pet.class};
+        Class<?>[] classes = new Class[] { Pet.class, Mammal.class, Bird.class, Parrot.class, Dog.class, Cat.class};
 
         //setting up the xstream object with default security and the above classes
         XStream xstream = new XStream(new DomDriver());

@@ -51,11 +51,11 @@ public abstract class Mammal extends Pet {
 
     @Override
     public String toString() {
-        return "Mammal{" + super.toString() +
-                "sex=" + sex +
-                ", vaccinated=" + vaccinated +
-                ", weight=" + weight +
-                ", neutered=" + neutered +
-                '}';
+        return  super.toString() +
+                ",  sex: " + sex +
+                ", vaccinated: " + (vaccinated ? "Yes" : "No") +
+                ", neutered: " + (neutered ?  "Yes" : "No") +
+                ", weight: " + weight;
+
     }
 }

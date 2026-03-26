@@ -31,7 +31,10 @@ public class Owner {
             this.id = id;
     }
     public void initName(String name) {
-        this.name = (name.length()<= 30? name : name.substring(0,30));
+
+        this.name = (name.length()<= 30?
+                name :
+                name.substring(0,30));
     }
 
 
@@ -59,8 +62,7 @@ public class Owner {
     @Override
     public String toString() {
         return
-                "Id: " + id +
-                        ", Name: " + name
-                ;
+                "Id: " + id + ", name: " + name + ", phone: " + phoneNumber;
+
     }}
 
