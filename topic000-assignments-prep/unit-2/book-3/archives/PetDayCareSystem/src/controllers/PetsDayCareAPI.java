@@ -272,12 +272,49 @@ public class PetsDayCareAPI implements ISerializer {
             for (int i = 0; i < pets.size(); i++){
                 if (pets.get(i).toString().contains(ownerName))   allPetsByOwner += i + ":\t" + pets.get(i) + "\n";
             }
-            if (allPetsByOwner.isEmpty()) {return "No Pets have that owner";}
+            if (allPetsByOwner.isEmpty()) {return "That owner has no pets registered at the moment";}
             else return allPetsByOwner;
         }
     }
+    //--------------------------------
+    // Sorting methods
+    //
+    //--------------------------------
 
-    //---------------------------------
+    private void swapPets(Pet p1, Pet p2) {
+        Pet temp = p1;
+        p1 = p2;
+        p2 = temp;
+    }
+    private void swapPets(int i, int j) {
+        Pet temp = pets.get(i);
+        pets.set(i, pets.get(j));
+        pets.set(j, temp);
+    }
+    public void sortPetsById() {
+        for (int i = 0; i < pets.size(); i++) {
+            int smallestSoFar = i;
+
+            for (int j = i + 1; j < pets.size(); j++) {
+                if (pets.get(j).getId() < pets.get(smallestSoFar).getId()) {
+                   smallestSoFar = j;
+                }
+                swapPets(i, smallestSoFar);
+            }
+        }
+    }
+    public void sortPetsByName() {
+        for (int i = 0; i < pets.size(); i++) {
+            int smallestSoFar = i;
+
+            for (int j = i + 1; j < pets.size(); j++) {
+                if (pets.get(j).getName().compareTo( pets.get(smallestSoFar).getName()) < 0) {
+                    smallestSoFar = j;
+                }
+                swapPets(i, smallestSoFar);
+            }
+        }
+    }
     //  Methods for Persistence
     // --------------------------------
 
@@ -292,7 +329,7 @@ public class PetsDayCareAPI implements ISerializer {
         xstream.allowTypes(classes);
 
         //doing the actual serialisation to an XML file
-        ObjectInputStream is = xstream.createObjectInputStream(new FileReader("kennel.xml"));
+        ObjectInputStream is = xstream.createObjectInputStream(new FileReader("pets.xml"));
         pets = (ArrayList<Pet>) is.readObject();
         is.close();
     }
@@ -304,7 +341,7 @@ public class PetsDayCareAPI implements ISerializer {
 
     public void save() throws Exception {
         XStream xstream = new XStream(new DomDriver());
-        ObjectOutputStream out = xstream.createObjectOutputStream(new FileWriter("kennel.xml"));
+        ObjectOutputStream out = xstream.createObjectOutputStream(new FileWriter("pets.xml"));
         out.writeObject(pets);
         out.close();
     }
