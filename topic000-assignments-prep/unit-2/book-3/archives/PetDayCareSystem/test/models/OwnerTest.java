@@ -67,6 +67,19 @@ class OwnerTest {
     }
 
     @Test
+    void testEqualsSameReference() {
+        // covers the `this == o` → true branch (line 1 of equals)
+        assertTrue(validOwner.equals(validOwner));
+    }
+
+    @Test
+    void testEqualsSameIdDifferentName() {
+        // covers the `&&` second operand: id matches but name differs → false
+        Owner sameId = new Owner(100, "Different Name", "0871234567");
+        assertNotEquals(validOwner, sameId);
+    }
+
+    @Test
     void testToString() {
         String result = validOwner.toString();
         assertTrue(result.contains("Id: 100"));

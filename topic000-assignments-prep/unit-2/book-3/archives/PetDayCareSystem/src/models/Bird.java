@@ -36,15 +36,9 @@ public abstract class Bird extends Pet{
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(wingSpan, canFly);
-    }
-
-    @Override
     public String toString() {
-        return "Bird{" + super.toString() +
-                "wingSpan=" + wingSpan +
-                ", canFly=" + canFly +
-                '}';
+        return "Bird: " + super.toString() +
+                "WingSpan: " + wingSpan +
+                ", canFly: " + (canFly == true ? "Yes" : "No") ;
     }
 }

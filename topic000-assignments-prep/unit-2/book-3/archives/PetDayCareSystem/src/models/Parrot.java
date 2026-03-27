@@ -12,15 +12,8 @@ public class Parrot extends Bird {
 
     @Override
     public double calculateWeeklyFee() {
-        double fee = 0;
-        boolean[] days = getDaysAttending();
-        for (int i = 0; i < days.length; i++) {
-            if (days[i]) {
-                fee += 10;  // base rate for parrot
 
-            }
-        }
-        return fee;
+        return 10 * super.numOfDaysAttending();
     }
 
     public String getVocabularySize() {
