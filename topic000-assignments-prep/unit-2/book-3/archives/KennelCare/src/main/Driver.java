@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Driver {
     private Scanner scanner = new Scanner(System.in);
-    private PetsDayCareAPI petsDaycareAPI = new PetsDayCareAPI("LeBarks", 50,new File("pets.xml") );
+    private PetsDayCareAPI petsDaycareAPI = new PetsDayCareAPI("Urban Tails Daycare", 50,new File("pets.xml") );
     private OwnerAPI ownerAPI= new OwnerAPI(new File("owners.xml"));
     public static void main(String[] args) {
 
