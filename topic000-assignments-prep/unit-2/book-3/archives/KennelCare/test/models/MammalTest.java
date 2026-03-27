@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MammalTest {
-
+  /*As Mammal is an abstract class, we cannot instantiate a Mammal object
+   so instead we instantiate a Dog object and just test the Mammal methods from it.
+   */
     Owner owner;
     Dog dog;
 

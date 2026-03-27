@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PetTest {
-
+    /*As Pet is an abstract class, we cannot instantiate a Pet object
+       so instead we instantiate a Dog object and just test the Pet methods from it.
+       */
     Owner owner;
 
     Dog dogNormal, onEdgeDog, belowEdgeDog, aboveEdgeDog;
