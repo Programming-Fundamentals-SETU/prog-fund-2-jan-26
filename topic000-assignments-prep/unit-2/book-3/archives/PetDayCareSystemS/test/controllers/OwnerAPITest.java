@@ -90,4 +90,75 @@ class OwnerAPITest {
         String empty = api.listOwnersStartsWith("Z");
         assertEquals("No Owners Found", empty);
     }
+
+    // -----------------------------------------------------------------------
+    // listOwners – empty list branch
+    // -----------------------------------------------------------------------
+
+    @Test
+    void testListOwnersWhenEmpty() {
+        OwnerAPI emptyApi = new OwnerAPI(new File("empty.xml"));
+        assertEquals("No Owners Found", emptyApi.listOwners());
+    }
+
+    // -----------------------------------------------------------------------
+    // isValidOwner – direct tests including case-insensitive match
+    // -----------------------------------------------------------------------
+
+    @Test
+    void testIsValidOwnerReturnsTrueForExactMatch() {
+        assertTrue(api.isValidOwner("John"));
+    }
+
+    @Test
+    void testIsValidOwnerReturnsTrueForCaseInsensitiveMatch() {
+        assertTrue(api.isValidOwner("john"));
+        assertTrue(api.isValidOwner("MARY"));
+    }
+
+    @Test
+    void testIsValidOwnerReturnsFalseForUnknownName() {
+        assertFalse(api.isValidOwner("Unknown"));
+    }
+
+    // -----------------------------------------------------------------------
+    // retrieveOwnerIndex – direct tests
+    // -----------------------------------------------------------------------
+
+    @Test
+    void testRetrieveOwnerIndexReturnsCorrectIndex() {
+        assertEquals(0, api.retrieveOwnerIndex("John"));
+        assertEquals(1, api.retrieveOwnerIndex("Mary"));
+    }
+
+    @Test
+    void testRetrieveOwnerIndexReturnsCaseInsensitive() {
+        assertEquals(0, api.retrieveOwnerIndex("john"));
+    }
+
+    @Test
+    void testRetrieveOwnerIndexReturnsNegativeOneWhenNotFound() {
+        assertEquals(-1, api.retrieveOwnerIndex("Unknown"));
+    }
+
+    // -----------------------------------------------------------------------
+    // Getters – getOwnerList, getFile, fileName
+    // -----------------------------------------------------------------------
+
+    @Test
+    void testGetOwnerList() {
+        assertEquals(2, api.getOwnerList().size());
+        assertTrue(api.getOwnerList().contains(owner1));
+        assertTrue(api.getOwnerList().contains(owner2));
+    }
+
+    @Test
+    void testGetFile() {
+        assertEquals(new File("test.xml"), api.getFile());
+    }
+
+    @Test
+    void testFileName() {
+        assertEquals("test.xml", api.fileName());
+    }
 }

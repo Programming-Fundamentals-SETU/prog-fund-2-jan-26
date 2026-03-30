@@ -40,11 +40,27 @@ class DogTest {
     }
 
     @Test
+    void testToStringDangerousBreed() {
+        dog.setDangerousBreed(true);
+        String result = dog.toString();
+        assertTrue(result.contains("dangerous: Yes"));
+    }
+
+    @Test
     void testWeeklyFee() {
         boolean[] days = {true, true, false, false, false, false, false};
         dog.setDaysAttending(days);
 
         assertEquals(2 * 30, dog.calculateWeeklyFee());
+    }
+
+    @Test
+    void testWeeklyFeeDangerousBreed() {
+        dog.setDangerousBreed(true);
+        boolean[] days = {true, true, true, false, false, false, false};
+        dog.setDaysAttending(days);
+
+        assertEquals(3 * 40, dog.calculateWeeklyFee());
     }
 
     @Test
@@ -54,5 +70,20 @@ class DogTest {
 
         Dog differentDog = new Dog("Buddy", 2, owner, 3000, 'M', true, 8, false, "Bulldog", false);
         assertNotEquals(dog, differentDog);
+    }
+
+    @Test
+    void testEqualsFirstLine() {
+        // o == null branch
+        assertFalse(dog.equals(null));
+
+        // getClass() != o.getClass() branch
+        assertFalse(dog.equals(owner));
+    }
+
+    @Test
+    void testEqualsSameBreedDifferentDangerousBreed() {
+        Dog dangerousDog = new Dog("Fang", 4, owner, 4000, 'M', true, 15, false, "Labrador", true);
+        assertNotEquals(dog, dangerousDog);
     }
 }

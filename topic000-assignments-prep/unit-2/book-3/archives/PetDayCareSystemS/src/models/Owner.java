@@ -2,7 +2,7 @@ package models;
 
 
 import java.util.Objects;
-
+// this class is fully functional
 public class Owner {
     private  int id = 100;// 3 digits - default 100
     private String name; // <= 30  //number should be stored with no spaces, start with 0 and have 10 digits in ir
@@ -31,7 +31,10 @@ public class Owner {
             this.id = id;
     }
     public void initName(String name) {
-        this.name = (name.length()<= 30? name : name.substring(0,30));
+
+        this.name = (name.length()<= 30?
+                name :
+                name.substring(0,30));
     }
 
 
@@ -59,8 +62,7 @@ public class Owner {
     @Override
     public String toString() {
         return
-                "Id: " + id +
-                        ", Name: " + name
-                ;
+                "Id: " + id + ", name: " + name + ", phone: " + phoneNumber;
+
     }}
 

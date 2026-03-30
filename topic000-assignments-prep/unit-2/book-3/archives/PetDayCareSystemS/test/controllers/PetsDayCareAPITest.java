@@ -9,11 +9,11 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DayCareAPITest {
+class PetsDayCareAPITest {
 
-    DayCareAPI validAPI;
-    DayCareAPI longNameAPI;
-    DayCareAPI boundaryMaxAPI;
+    PetsDayCareAPI validAPI;
+    PetsDayCareAPI longNameAPI;
+    PetsDayCareAPI boundaryMaxAPI;
 
     File file;
 
@@ -21,9 +21,9 @@ class DayCareAPITest {
     void setUp() {
         file = new File("test.xml");
 
-        validAPI = new DayCareAPI("HappyPets", 20, file);
-        longNameAPI = new DayCareAPI("VeryLongDayCareName", 20, file); // >10 chars
-        boundaryMaxAPI = new DayCareAPI("Test", 100, file); // upper boundary
+        validAPI = new PetsDayCareAPI("HappyPets", 20, file);
+        longNameAPI = new PetsDayCareAPI("VeryLongDayCareName", 20, file); // >10 chars
+        boundaryMaxAPI = new PetsDayCareAPI("Test", 100, file); // upper boundary
     }
 
     // ----------------------------

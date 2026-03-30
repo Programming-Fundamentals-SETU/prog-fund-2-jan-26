@@ -42,6 +42,8 @@ class OwnerTest {
     void testSetters() {
         validOwner.setName("Jane");
         assertEquals("Jane", validOwner.getName());
+        validOwner.setName("1234567890123456789012345678901");
+        assertEquals("Jane", validOwner.getName());
 
         validOwner.setPhoneNumber("0831234567");
         assertEquals("0831234567", validOwner.getPhoneNumber());
@@ -59,6 +61,22 @@ class OwnerTest {
 
         Owner o3 = new Owner(101, "John", "0871111111");
         assertNotEquals(o1, o3);
+
+        assertNotEquals(o1, null);
+        assertNotEquals(o1, new Object());
+    }
+
+    @Test
+    void testEqualsSameReference() {
+        // covers the `this == o` → true branch (line 1 of equals)
+        assertTrue(validOwner.equals(validOwner));
+    }
+
+    @Test
+    void testEqualsSameIdDifferentName() {
+        // covers the `&&` second operand: id matches but name differs → false
+        Owner sameId = new Owner(100, "Different Name", "0871234567");
+        assertNotEquals(validOwner, sameId);
     }
 
     @Test
