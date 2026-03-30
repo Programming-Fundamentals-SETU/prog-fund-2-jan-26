@@ -1,0 +1,29 @@
+<object-stream>
+  <list>
+    <models.Dog>
+      <name>Buddy</name>
+      <age>15</age>
+      <owner>
+        <id>100</id>
+        <name>Siobhan</name>
+        <phoneNumber>087123123123</phoneNumber>
+      </owner>
+      <daysAttending>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+      </daysAttending>
+      <id>1000</id>
+      <sex>M</sex>
+      <vaccinated>true</vaccinated>
+      <weight>20.0</weight>
+      <neutered>true</neutered>
+      <breed>Bulldog</breed>
+      <dangerousBreed>true</dangerousBreed>
+    </models.Dog>
+  </list>
+</object-stream>
