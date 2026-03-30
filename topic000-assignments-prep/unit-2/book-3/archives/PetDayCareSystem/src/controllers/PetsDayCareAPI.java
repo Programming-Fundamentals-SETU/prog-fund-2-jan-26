@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class PetsDayCareAPI implements ISerializer {
     private ArrayList<Pet> pets;
-    private String name;  // 10 chars
+    private String name;  // 20 chars
     private int maxNumberOfPets = 10;  // must be >= 10 <= 100 - default to 10
     private File file;
 
@@ -30,7 +30,7 @@ public class PetsDayCareAPI implements ISerializer {
     //  Setters/Getters
     //-------------------------------------
     private void initName(String name) {
-        this.name = (name.length() <= 10 ? name : name.substring(0, 10));
+        this.name = (name.length() <= 20 ? name : name.substring(0, 10));
     }
 
     public void setMaxNumberOfPets(int maxNumberOfPets) {
@@ -40,7 +40,7 @@ public class PetsDayCareAPI implements ISerializer {
     }
 
     public void setName(String name) {
-        if (name.length() <= 10) {
+        if (name.length() <= 20) {
             this.name = name;
         }
     }
