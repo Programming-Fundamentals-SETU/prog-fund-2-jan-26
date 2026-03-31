@@ -1,0 +1,34 @@
+<object-stream>
+  <list>
+    <models.Product>
+      <productName>32 Inch TV</productName>
+      <productCode>3204</productCode>
+      <unitCost>199.44</unitCost>
+      <inCurrentProductLine>false</inCurrentProductLine>
+    </models.Product>
+    <models.Product>
+      <productName>Peanut Butter</productName>
+      <productCode>3422</productCode>
+      <unitCost>23.33</unitCost>
+      <inCurrentProductLine>true</inCurrentProductLine>
+    </models.Product>
+    <models.Product>
+      <productName>Almond Butter</productName>
+      <productCode>3432</productCode>
+      <unitCost>45.33</unitCost>
+      <inCurrentProductLine>true</inCurrentProductLine>
+    </models.Product>
+    <models.Product>
+      <productName>Walnut butter</productName>
+      <productCode>4332</productCode>
+      <unitCost>23.22</unitCost>
+      <inCurrentProductLine>true</inCurrentProductLine>
+    </models.Product>
+    <models.Product>
+      <productName>iPhone</productName>
+      <productCode>3323</productCode>
+      <unitCost>54.33</unitCost>
+      <inCurrentProductLine>false</inCurrentProductLine>
+    </models.Product>
+  </list>
+</object-stream>
