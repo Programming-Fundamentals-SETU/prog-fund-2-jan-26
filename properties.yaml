@@ -22,7 +22,7 @@ ignore         :
 #- topic07-TDD-and-JUnit
 #- topic08-inheritance
 #- topic09-polymorphism-abstraction
-- topic10-interfaces
+#- topic10-interfaces
 - topic11-search-and-sort
 - QuizesTutorials
 
