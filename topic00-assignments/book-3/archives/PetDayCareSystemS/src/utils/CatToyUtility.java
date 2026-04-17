@@ -30,7 +30,15 @@ public class CatToyUtility {
 
     // Check for a valid toy
     static public boolean isCatToy(String catToy) {
+
         return catToys.containsKey(catToy);
+    }
+
+    static public String getCatToyDescrition(String catToy) {
+        if (isCatToy(catToy)) {
+            return catToys.get(catToy);
+        }
+        return "Not a cat Toy";
     }
 
 
