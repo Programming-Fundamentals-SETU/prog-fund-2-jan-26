@@ -1,6 +1,6 @@
 ---
 icon: 
-    type: material-symbols:manage-search
+    type: hugeicons:sorting-03
     color : jade
 ---
 # Sorting 
