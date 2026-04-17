@@ -3,6 +3,6 @@ icon:
     type: material-symbols:manage-search
     color : jade
 ---
-# Sorting 
+# Searching
 
-Basic Sorting 
+Basic searching algorithms
