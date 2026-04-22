@@ -23,7 +23,7 @@ ignore         :
 #- topic08-inheritance
 #- topic09-polymorphism-abstraction
 #- topic10-interfaces
-- topic11-search-and-sort
+#- topic11-search-and-sort
 - QuizesTutorials
 
 - topic99-supplementary-materials
