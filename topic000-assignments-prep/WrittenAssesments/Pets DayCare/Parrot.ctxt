@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Parrot
+comment1.params=name\ age\ owner\ id\ wingSpan\ canFly\ vocabularySize
+comment1.target=Parrot(java.lang.String,\ int,\ Owner,\ int,\ double,\ boolean,\ int)
+comment2.params=
+comment2.target=double\ calculateWeeklyFee()
+comment3.params=
+comment3.target=java.lang.String\ getVocabularySize()
+comment4.params=vocabularySize
+comment4.target=void\ setVocabularySize(int)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

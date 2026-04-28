@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=BirdUtility
+comment0.text=\n\ Utility\ class\ that\ provides\ methods\ for\ determining\ a\ bird's\n\ vocabulary\ level\ based\ on\ the\ number\ of\ words\ it\ knows.\n\ The\ vocabulary\ levels\ are\ stored\ in\ a\ {@link\ TreeMap}\ where\ the\ key\n\ represents\ the\ minimum\ number\ of\ words\ required\ for\ that\ level.\n
+comment1.params=words
+comment1.target=java.lang.String\ getVocabularyLevel(int)
+comment1.text=\n\ Determines\ the\ vocabulary\ level\ of\ a\ bird\ based\ on\ the\ number\ of\ words\ it\ knows.\n\ This\ method\ uses\ a\ {@link\ TreeMap}\ to\ find\ the\ closest\ vocabulary\ level\n\ that\ is\ less\ than\ or\ equal\ to\ the\ provided\ number\ of\ words.\n\ @param\ words\ the\ number\ of\ words\ the\ bird\ knows\n\ @return\ the\ vocabulary\ level\ description\n
+comment2.params=numberOfWords
+comment2.target=java.lang.String\ getVocabularyLevel2(int)
+comment2.text=\n\ Determines\ the\ vocabulary\ level\ of\ a\ bird\ based\ on\ the\ number\ of\ words\ it\ knows.\n\ This\ method\ uses\ conditional\ statements\ instead\ of\ a\ {@link\ TreeMap}.\n\ It\ produces\ the\ same\ result\ as\ {@link\ \#getVocabularyLevel(int)}.\n\n\ @param\ numberOfWords\ the\ number\ of\ words\ the\ bird\ knows\n\ @return\ the\ vocabulary\ level\ description\n
+numComments=3

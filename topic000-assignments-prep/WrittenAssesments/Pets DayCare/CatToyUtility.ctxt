@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CatToyUtility
+comment1.params=
+comment1.target=java.lang.String\ getCatToys()
+comment2.params=catToy
+comment2.target=boolean\ isCatToy(java.lang.String)
+numComments=3
