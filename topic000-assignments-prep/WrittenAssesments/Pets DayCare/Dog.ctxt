@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Dog
+comment1.params=name\ age\ owner\ id\ sex\ vaccinated\ weight\ neutered\ breed\ dangerousBreed
+comment1.target=Dog(java.lang.String,\ int,\ Owner,\ int,\ char,\ boolean,\ double,\ boolean,\ java.lang.String,\ boolean)
+comment2.params=
+comment2.target=java.lang.String\ getBreed()
+comment3.params=breed
+comment3.target=void\ setBreed(java.lang.String)
+comment4.params=
+comment4.target=boolean\ isDangerousBreed()
+comment5.params=dangerousBreed
+comment5.target=void\ setDangerousBreed(boolean)
+comment6.params=
+comment6.target=double\ calculateWeeklyFee()
+comment7.params=o
+comment7.target=boolean\ equals(java.lang.Object)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

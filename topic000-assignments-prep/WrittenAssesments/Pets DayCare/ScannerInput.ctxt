@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ScannerInput
+comment0.text=\n\ This\ class\ provides\ methods\ for\ the\ robust\ handling\ of\ I/O\ using\ Scanner.\n\ It\ creates\ a\ new\ Scanner\ object\ for\ each\ read\ from\ the\ user,\ thereby\n\ eliminating\ the\ Scanner\ bug\ (where\ the\ buffers\ don't\ flush\ correctly\ after\ an\ int\ read).\n\n\ The\ methods\ also\ parse\ the\ numeric\ data\ entered\ to\ ensure\ it\ is\ correct.\ If\ it\ isn't\ correct,\n\ the\ user\ is\ prompted\ to\ enter\ it\ again.\n\n\ @author\ Siobhan\ Drohan,\ Mairead\ Meagher,\ Siobhan\ Roche\n\ @version\ 1.0\n\n
+comment1.params=prompt
+comment1.target=int\ readNextInt(java.lang.String)
+comment1.text=\n\ Read\ an\ int\ from\ the\ user.\ \ If\ the\ entered\ data\ isn't\ actually\ an\ int,\n\ the\ user\ is\ prompted\ again\ to\ enter\ the\ int.\n\n\ @param\ prompt\ \ The\ information\ printed\ to\ the\ console\ for\ the\ user\ to\ read\n\ @return\ The\ number\ read\ from\ the\ user\ and\ verified\ as\ an\ int.\n
+comment2.params=prompt
+comment2.target=double\ readNextDouble(java.lang.String)
+comment2.text=\n\ Read\ a\ double\ from\ the\ user.\ \ If\ the\ entered\ data\ isn't\ actually\ a\ double,\n\ the\ user\ is\ prompted\ again\ to\ enter\ the\ double.\n\n\ @param\ prompt\ \ The\ information\ printed\ to\ the\ console\ for\ the\ user\ to\ read\n\ @return\ The\ number\ read\ from\ the\ user\ and\ verified\ as\ a\ double.\n
+comment3.params=prompt
+comment3.target=java.lang.String\ readNextLine(java.lang.String)
+comment3.text=\n\ Read\ a\ line\ of\ text\ from\ the\ user.\ \ There\ is\ no\ validation\ done\ on\ the\ entered\ data.\n\n\ @param\ prompt\ \ The\ information\ printed\ to\ the\ console\ for\ the\ user\ to\ read\n\ @return\ The\ String\ read\ from\ the\ user.\n
+comment4.params=prompt
+comment4.target=char\ readNextChar(java.lang.String)
+comment4.text=\n\ Read\ a\ single\ character\ of\ text\ from\ the\ user.\ \ There\ is\ no\ validation\ done\ on\ the\ entered\ data.\n\n\ @param\ prompt\ \ The\ information\ printed\ to\ the\ console\ for\ the\ user\ to\ read\n\ @return\ The\ char\ read\ from\ the\ user.\n
+numComments=5

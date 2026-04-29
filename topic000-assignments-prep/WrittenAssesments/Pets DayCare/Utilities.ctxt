@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Utilities
+comment1.params=number
+comment1.target=double\ toTwoDecimalPlaces(double)
+comment1.text=\n\ This\ method\ takes\ in\ a\ decimal\ point\ number\ and\ truncates\ it\ to\ two\ decimal\ places.\ \ Note\n\ that\ the\ method\ does\ NOT\ round\ when\ truncating;\ the\ numbers\ after\ the\ two\ decimal\ places\ are\n\ just\ removed.\n\ <p>\n\ The\ method\ does\ the\ truncating\ in\ this\ manner\:\n\ -\ multiply\ the\ number\ by\ 100\ e.g.\ 16.543235523\ *\ 100\ \=\ 1654.3235523\n\ -\ cast\ the\ multiplied\ number\ as\ an\ in\ e.g.\ 1654.3235523\ \=\ 1654\n\ -\ finally,\ the\ multiplied\ and\ casted\ number\ is\ divided\ by\ 100\ and\ returned\ e.g.\ 1654\ \=\ 16.54\n\n\ @param\ number\ Number\ to\ be\ truncated\ to\ two\ decimal\ places\n\ @return\ the\ number,\ passed\ as\ a\ parameter,\ truncated\ to\ two\ decimal\ places\ (note\:\ not\ rounded)\n
+comment2.params=booleanToConvert
+comment2.target=char\ booleanToYN(boolean)
+comment2.text=\n\ This\ method\ returns\ Y\ if\ the\ booleanToConvert\ value\ is\ true.\ Returns\ N\ otherwise.\n\n\ @param\ booleanToConvert\ The\ boolean\ value\ that\ will\ be\ used\ to\ determine\ Y/N\n\ @return\ Returns\ Y\ if\ the\ booleanToConvert\ value\ is\ true.\ Returns\ N\ otherwise.\n
+comment3.params=charToConvert
+comment3.target=boolean\ YNtoBoolean(char)
+comment3.text=\n\ This\ method\ returns\ true\ if\ the\ charToConvert\ value\ is\ Y\ or\ y.\ Returns\ false\ in\ all\ other\ cases.\n\n\ @param\ charToConvert\ The\ char\ value\ that\ will\ be\ used\ to\ determine\ true/false.\n\ @return\ Returns\ true\ if\ the\ charToConvert\ value\ is\ Y\ or\ y.\ Returns\ false\ otherwise.\n
+comment4.params=numberToCheck\ min\ max
+comment4.target=boolean\ validRange(int,\ int,\ int)
+comment4.text=\n\ This\ method\ returns\ true\ if\ the\ numberToCheck\ is\ between\ min\ and\ max\ (both\ inclusive)\n\n\ @param\ numberToCheck\ The\ number\ whose\ range\ is\ being\ checked.\n\ @param\ min\ The\ minimum\ range\ number\ to\ check\ against\ (inclusive)\n\ @param\ max\ The\ maximum\ range\ number\ to\ check\ against\ (inclusive)\n\ @return\ Returns\ true\ if\ the\ numberToCheck\ is\ between\ min\ and\ max\ (both\ inclusive),\ false\ otherwise.\n
+comment5.params=numbertoCheck\ min\ max\ delta
+comment5.target=boolean\ validRange(double,\ double,\ double,\ double)
+comment6.params=numbertoCheck\ min\ max
+comment6.target=boolean\ validRange(double,\ double,\ double)
+comment7.params=stringToTruncate\ length
+comment7.target=java.lang.String\ truncateString(java.lang.String,\ int)
+comment8.params=strToCheck\ maxLength
+comment8.target=boolean\ validStringlength(java.lang.String,\ int)
+comment9.params=list\ indexToCheck
+comment9.target=boolean\ isValidIndex(java.util.List,\ int)
+numComments=10
