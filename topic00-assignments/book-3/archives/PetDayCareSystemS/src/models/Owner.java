@@ -9,7 +9,7 @@ public class Owner {
     private String phoneNumber = "087302000";
 
     public Owner(int id, String name, String phoneNumber) {
-        setId(id);
+        initId(id);
         initName(name);
         setPhoneNumber(phoneNumber);
     }
